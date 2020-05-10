@@ -1,10 +1,10 @@
 body {
-    margin: 0;
-    padding: 0;
     /*background: #f9f3f3;*/
-    background: #fafafa;
   	font-family: "Yu Gothic UI", "sans serif"; 
   	font-family: "Quicksand";
+
+	overflow-y: scroll;
+	background-color: #D2CDCD;
 
 }
 
@@ -12,61 +12,78 @@ body {
 a {
 	text-decoration: none;
 	color: white;
+    text-decoration: none;
 
 }
 
-#container{
-
-}
-.image-main {
-   	max-width: 100%;
-    max-height: 100vh;
-    margin: left;
-  	float: left;
-
+a:hover {
+     color:grey; 
+     text-decoration:none; 
+     cursor:pointer;  
 }
 
-#textbox {
+#boxwelcome {
+	position: absolute;
+	width: 100%;
+	height: 262px;
+	left: 0px;
+	top: 220px;
+	background: rgba(196, 196, 196, 0.71);	
+
+}
+
+
+#boxwelcome h1 {
 	text-align: center;
-	text-orientation: center;
-	justify-content: center;
-
+	font-family: Red Hat Display;
+	position: absolute;
+	color: white;
 }
 
-
-
-h1 {
-	color: white;
-	margin-top: 8%;
-	padding-left: 10%;
-	font-size: 30pt;
-	font-family: "Yu Gothic UI";
-
+.namnlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
-	color: white;
-	font-size: 30pt;
+	padding-top: 40px;
 	text-align: center;
-	font-family: "Yu Gothic UI";
 
 }
 
-p {
-	text-align: center;
-	color: black;
-	margin-top: 1%;
-	font-size: 16pt;
-	padding-bottom: 5%;
+#frontpage {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	left: 0px;
+	top: 0px;
+	padding-top: 600px;
 }
 
-#about {
-	background: rgb(249,243,243));
-	background: linear-gradient(90deg, rgba(223,167,144,1) 0%, rgba(250,250,250,1) 100%, rgba(250,250,250,1) 100%);
+#frontpage h2 {
+	
+	text-align: center;
+
+}
+
+#boxlocation {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	left: 0px;
+	top: 0px;
+	background: rgba(196, 196, 196, 0.71);
+}
+
+#namnlogohela {
+	height: 50px;
+	padding-left: 20px;
 }
 
 .aboutme {
-	margin-top: 5%;
+	margin-top: 10%;
+
 
 }
 
@@ -79,6 +96,7 @@ p {
   margin-left: 40%;
 
 }
+
 
 #textofme {
 	width: 50%;
@@ -95,21 +113,20 @@ p {
 	justify-content: center;	
 }
 
-
-#projects {
-	/*background: rgb(255,255,255);
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,167,144,1) 50%, rgba(255,255,255,1) 100%);*/
-	/*background: rgb(223,167,144);
-	background: radial-gradient(circle, rgba(223,167,144,1) 0%, rgba(249,243,243,1) 100%);*/
-	background: rgb(249,243,243);
-	background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(223,167,144,1) 50%, rgba(250,250,250,1) 100%);
+#myskills {
+	width: 100px;
+	height: 110px;
+	margin: 0 auto;
+	background-color: rgba(74, 74, 74, 0.3);
+	padding: 5px;
 }
 
-/*.projectgrid {
-	position: absolute;
-	left: 50%;
-	top: 300px;	
-}*/
+#myskills p{
+	text-align: center;
+	color: white;
+	padding: 0.5px;
+}
+
 #projectgrid {
 	margin-top: 10%;
 }
@@ -131,14 +148,19 @@ p {
 
 }
 
-.projectgrid {
-	position: absolute;
-	left: 50%;
-	top: 300px;
 
+#middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.middle {
+.myBtn {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -153,7 +175,11 @@ p {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.container:hover #middle {
+  opacity: 1;
+}
+
+.container:hover .myBtn {
   opacity: 1;
 }
 
@@ -189,56 +215,46 @@ p {
 	padding: 16px 32px;
 
 }
+/* --------------------------------- */
 
-
-#contact {
-	background: rgb(255,255,255);
-	background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(223,167,144,1) 100%, rgba(223,167,144,1) 100%);
-}
-
-.contactme {
-	margin-top: 5%;
-	font-size: 30pt;
-}
-
-h3 {
-	font-size: 20pt;
-
-}
-
-#contact_icons {
-	display: flex;	
-	justify-content: center;
-}
-
-#contact_icons img {
-	margin: 5px;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: grey; /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 
 }
 
-.column {
-  float: left;
-  width: 30%;
-  padding: 5px;
-  margin-left: 2%;
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
 
-.courseimage {
-	width: 100%;
-	position: center;
-	padding: 10%;
-
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.coursevideo {
-	width: 100%;
-	position: center;
-
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-#projtext p {
-	font-size: 10pt;
-	text-align: left;
-	font-family: "Quicksand";
-
-}
+/* ------------------- */
