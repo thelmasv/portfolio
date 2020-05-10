@@ -9,10 +9,13 @@
   <link rel="icon" href="namnicon.png">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="slut.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+
 
   <script>
     WebFont.load({
@@ -25,238 +28,460 @@
 </head>
 
 <body>
-  
-  <div class = "header">
+ 
+<!--  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" id="boxlocation">
+        <a href="about.html">hello</a>
+      </div>
+      <div class="col-sm-4" id="boxlocation">
+        <a href="about.html">About</a>
+      </div>
+
+      <div class="col-sm-4" id="boxlocation">
+        <a href="projects.html">Projects</a>
+      </div>  
+
+    </div>  
+  </div>
+-->
+
+  <div class = "header"  id="boxlocation">
+    <div class="row">
+      <a href="index.html"><image src="namnlogohela.png" id="namnlogohela"></image></a>
+    </div>
     <div class = "row">
-      <div class ="col-sm-4">
-        <h2><a href = "about.html" style="color: #A29393"><br>About<br><br></a></h2>
+      <div class ="col-sm-6" >
+        <h2><a href = "about.html">About</a></h2>
       </div>
-      <div class ="col-sm-4">
-        <h2 id = "projects"><a href = "index.html"><br>Projects<br><br></a></h2>
-      </div>
-      <div class ="col-sm-4">
-        <h2><a href = "contact.html" style="color: #A29393"><br>Contact<br><br></a></h2>
-      </div>            
+      <div class ="col-sm-6">
+        <h2 id = "projects"><u><a href = "projects.html">Projects</a></u></h2>
+      </div>           
     </div>
 
-
-  </div>
 <!-- ------------------ PROJEKTDELEN ------------------ --> 
   <div class="row" style="margin-left: 2%" id="projectgrid">
+
+<!-- .......... EXET .......... -->
 
     <div class="col-sm-4">
       <div class = "container">        
         <img src="exet.jpeg" alt="Exjobb" class="image"> 
-        <a href="intdance.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Interactive Dance</div>
           <div class="textdesc">Max/MSP, Sensors</div>
           <div class="textcourse">Master Thesis - Spring 2020</div>
-        </a>
-        </div>  
-      </div>         
+        </button>
+      </div>  
+    </div> 
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+          <iframe title="coursevideo" src="https://player.vimeo.com/video/414692921" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>      
+          </div> 
+          <div class="col-sm-3"></div>       
+        </div>
+        <div class="row">
+          <p>As a master thesis, I'm doing a project together with a colleague from KTH and a music student from KMH, Royal College of Music. In this project, the interaction between dancer and musician through sensor technology is investigated and I'm specifically investigating the input design of the wearable sensors and how the technology is affecting the dancer. More about the project can be found <a style="color: black" href="https://thelmasv.github.io/InteractiveDance/"><u>here</u>.</a> The webpage was designed in Adobe XD and developed later together with Lisa Andersson Lopéz in HTML/CSS.</p>
+        </div>        
+      </div>
+
+    </div>
+
+<!-- .......... CHRISTMAS .......... -->
 
 
     <div class="col-sm-4">
       <div class = "container">      
         <img src="christmashero.png" alt="hristmashero" class="image">
-        <a href="christmas.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Christmas Hero</div>
           <div class="textdesc">Computer game, Unity</div>
           <div class="textcourse">Computer Game Design DH2650 - Autumn 2019</div>
-        </a>   
+        </button>   
       </div>      
     </div>
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+          <iframe class="coursevideo" src="https://player.vimeo.com/video/378384448" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div> 
+          <div class="col-sm-3"></div>       
+        </div>
+
+        <div class="row" id="projtext">
+          <p>In this project a Christmas themed game was developed in the course Computer game design at KTH during six weeks. In the game, Christmas is behind the door but the Christmas Spirit has dissapeard due to the Cactus Boss. The gamer has to take back the Christmas Spririt into town by finding Christmas gifts and solve the Christmas riddles, and from them deliver the gifts to the right character. For every delivered gift, the Christmas spirit will progressively grow in terms of music, decorations and snow.<br>I had the responsibility of the design of the game world and testing it on our target group. I also composed the background music. The game was made in Unity and the composition was made in MuseScore.<br><br>The music can be found<a style="color: black" href="composition.html"> here.</a></p>
+        </div>       
+      </div>
+
+    </div>    
+
+<!-- .......... IMPRO .......... -->
+
 
     <div class="col-sm-4">
       <div class = "container">        
         <img src="bassalg.png" alt="Improvisational" class="image">
-        <a href="impro.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Improvisational Algorithm</div>
           <div class="textdesc">Max/MSP, interaction musician computer</div>
           <div class="textcourse">Advanced Project Course DM2799 - Autumn 2019</div>
-        </a>
+        </button>
       </div>         
     </div>  
 
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+            <iframe class="coursevideo" src="https://player.vimeo.com/video/379138562" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div> 
+            <div class="col-sm-3"></div>       
+          </div>
+          <div class="row">
+            <p1>In this project an improvisational algorithm was developed together with a team of four people in the course Advanced project course at KTH. The algorithm could play and improvise together with a human musician based on the improvisation method called Flocker. It was made in Max/MSP in a collboration with KMH, Royal College of Music.</p1>
+          </div>      
+
+      </div>
+
+    </div>   
+
+
   </div>
-
-
   <div class="row" style="margin-left: 2%">
+
+<!-- .......... MUSICINFO .......... -->
 
 
     <div class="col-sm-4">
       <div class = "container">       
         <img src="musicinfo.png" alt="Chorddetector" class="image">
-        <div class="middle">
+        <button class="myBtn">
           <div class="texttitle">Chord detector</div>
           <div class="textdesc">Machine learning, chord/key detection, NumPy</div>
           <div class="textcourse">Music Informatics DT2470 - Autumn 2019</div>
-        </div>
+        </button>
       </div>         
     </div>  
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>    
+
+      </div>
+
+    </div>       
+<!-- .......... QUIZIFY .......... -->
 
     <div class="col-sm-4">
       <div class = "container">       
         <img src="quizify.png" alt="Quizify" class="image">
-        <a href="quizify.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Quizify</div>
           <div class="textdesc">UX, JavaScript/HTML/CSS, web game</div>
           <div class="textcourse">Interaction programing for the dynamic web DH2642 - Spring 2019</div>
-        </a>
-        </div>  
-      </div>        
+        </button>
+      </div>  
+    </div>  
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <iframe src="https://player.vimeo.com/video/414838270" width="640" height="347" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>      </div> 
+            <div class="col-sm-3"></div>       
+          </div>
+          <div class="row">
+            <p1>This web music game was made in a team of four in the course Interaction programing for the dynamic web at KTH. The user can create a game or play a game. </p1>
+          </div>    
+      </div>
+
+    </div>               
+<!-- .......... KONSOLOFON .......... -->
 
     <div class="col-sm-4">
       <div class = "container">       
         <img src="konsolofon.JPG" alt="Konsolofon" class="image">  
-        <a href="konsolofon.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Konsolofon</div>
           <div class="textdesc">Acoustic, physical instrument</div>
           <div class="textcourse">Music Acoustic DT2212 - Spring 2019</div>
-        </a>
+        </button>
       </div>         
     </div>
 
-  </div>
 
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+          <iframe class="coursevideo" src="https://player.vimeo.com/video/327372884" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div> 
+          <div class="col-sm-3"></div>       
+        <div class="row">
+          <p1>In the course Music Acoustics at KTH, this instrument was developed together with a colleague. It is called Konsolofon, as it is made with shelf brackets ("konsoler" in Swedish) and is based on the xylophone. The shelf brackets was cut with a specific length to achieve the aimed frequency and tone of each shelf bracket. Konsolofonen is tuned in E minor blues scale. </p1>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
   <div class="row" style="margin-left: 2%">
+
+<!-- .......... DARKEXPO .......... -->
 
     <div class="col-sm-4">
       <div class = "container">        
         <img src="darkexp.jpg" alt="Darkexp" class="image">
-        <a href="darkexpo.html" class="middle">
+        <button class="myBtn">         
           <div class="texttitle">Dark Exploration</div>
           <div class="textdesc">Motion Capture, SuperCollider</div>
           <div class="textcourse">Media Technology and Interaction Design DM2601 - Spring 2019</div>
-        </a>
+        </button>
       </div>        
     </div>
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+          <iframe class="coursevideo" src="https://player.vimeo.com/video/323694434" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div> 
+          <div class="col-sm-3"></div>       
+        <div class="row">
+          <p1>In this project a exploration through sound was developed in the course Sound in interaction at KTH. The user get to explore a room in darkness through sound. Every wall is mapped with an instrument, from a music track consisting of four instruments. In the middle of the room, the sweet spot is detected, but when moving toward a specific wall, the specific mapped instrument will be heard more and the user can in turn get help through sound to locate in the room.<br>This project was together with a colleague, made in SuperCollider and used Motion Caputure to detect the movements.</p1>
+        </div>    
+      </div>
+
+    </div>
+
+<!-- .......... LEAP .......... -->
 
     <div class="col-sm-4">
       <div class = "container">          
         <img src="leap.png" alt="Cattheremin" class="image">
-        <a href="leap.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">The cat theremin</div>
           <div class="textdesc">SuperCollider, Leap Motion</div>
           <div class="textcourse">Individual Course DT - Spring 2019</div>
-        </a>
+        </button>
       </div>        
     </div> 
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+          <iframe class="coursevideo" src="https://player.vimeo.com/video/388698136" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div> 
+          <div class="col-sm-3"></div>       
+        <div class="row">
+          <p1>The Cat Theremin was developed in a course in Music Programming. It is developed in SuperCollider and is using Leap Motion. </p1>
+        </div>     
+      </div>
+
+    </div>       
+
+<!-- .......... MIXAR .......... -->
 
     <div class="col-sm-4">
       <div class = "container">       
         <img src="mixar.png" alt="Mixar" class="image">   
-        <a a href="mixar.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Mixar</div>
           <div class="textdesc">Unity, mapping sounds</div>
           <div class="textcourse">Multimodal Interaction and Interfaces DT2140 - Autumn 2018</div>
-        </a>
+        </button>
       </div>        
     </div>     
 
-  </div>  
+    <div id="myModal" class="modal">
 
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+          <iframe class="coursevideo" src="https://player.vimeo.com/video/388698136" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div> 
+          <div class="col-sm-3"></div>       
+        <div class="row">
+          <p1>The Cat Theremin was developed in a course in Music Programming. It is developed in SuperCollider and is using Leap Motion. </p1>
+        </div>     
+      </div>
+
+    </div>  
+
+  </div>
   <div class="row" style="margin-left: 2%">
+
+<!-- .......... REMARK .......... -->
 
 
     <div class="col-sm-4">
       <div class = "container">
         <img src="remark_r.png" alt="Remark" class="image">   
-        <a a href="remark.html" class="middle">
+        <button class="myBtn">
           <div class="texttitle">Remark</div>
           <div class="textdesc">UX, app, prototype</div>
           <div class="textcourse">Media Technology and Interaction Design DM2601 - Autumn 2018</div>
-        </a>
+        </button>
       </div> 
     </div>
+
+      <!-- Modal content -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+            <img src="remark_r.png" alt="Remark" class="courseimage">  
+            </div> 
+            <div class="col-sm-3"></div>       
+          <div class="row">
+            <p1>This applications was designed in the course Media Technology and Interaction Design at KTH. It is a note taking application where students can easily make and share notes with each other. The aim of the course was to have a focus on UX and design.</p1>
+          </div>    
+          </div>
+
+      </div>  
+
+    </div>       
+<!-- .......... COMPOSITIONS .......... -->
 
     <div class="col-sm-4">
       <div class = "container">       
         <img src="piano.jpg" alt="Compostiotion" class="image">
-        <a a href="composition.html" class="middle">        
-        <div class="middle">
+        <button class="myBtn">        
           <div class="texttitle">Composition projects</div>
           <div class="textdesc">Composition</div>
           <div class="textcourse"></div>
-        </div>
+        </button>
       </div>          
     </div>
 
   </div>
 
-  
-<!--
-  <div class="projectgrid">
 
-    <div class = "row">
-      <div class="col-sm-6">
-      <img src="remarkpic.jpg" alt="Remark" class="image" style="width: 100%">
 
-        <div class = "box">
-          <a class="middle" class ="button" href="#popup1">
-              <div class="texttitle">Remark</div>
-              <div class="textdesc">UX, app, prototype</div>
-              <div class="textcourse">Media Technology and Interaction Design DM2601 - Autumn 2018</div>
-            </a>
-        </div>
+    <div id="myModal" class="modal">
 
-        <div id="popup1" class = "overlay">
-          <div class = "popup">
-            <h2> woh </h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">yeah</div>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="row">
+            <div class ="row" id="projectpart">
+              <div class="col-sm-6">
+                <iframe src="https://player.vimeo.com/video/413636650" width="540" height="260" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>    
+              <div class="col-sm-6" id="projecttext">
+                <p style="font-size: 12pt">In the reception at Media Technology at KTH, a film project is always produced. In 2016, the traditional film project called RGB/SW was made, that is a story about the super heros Röd, Grön, Blå, Swart and Wit. I was the leader of the music composition team, and also composed many tracks for the film serie. This video is the title intro to the serie and was composed by me and mastered together with Johan Wetterin. The composition was made in MuseScore. <br> Something that was challenging was that the music had to be composed and produced before seeing any film material. I only had the knowledge of the story and the script to base the music on.</p>
+              </div>
+            </div>  
+
+            <div class ="row" id="projectpart">
+              <div class="col-sm-6" id="projecttext">
+                <p style="font-size: 12pt">In a Computer game course taken in 2019, a Christmas themed game was developed by me and a team of four others (read more about the game <a style="color: black" href="christmas.html"> here.)</a>. In the game, the spirit of Christmas had disappeard but was progressively coming back when Christmas gifts were delivered to the right character. The music was therefore progressively becoming more christmassy in terms of Christmas related instruments and melody. In level 1, only wind sound was heard. In level 2, I wanted to make a simple and quite careful melody that felt hopeful and happy but not too christmassy. As I wanted a feeling of continuation between the levels, the beginning of the music in level 3 has the same melody as in level 2, but is then continuing in melody. In the final part, I wanted to create a happy and as christmassy feeling as possible. As the user has reached the end of the game by then, it is relativly short and is not repeating. <br>The composition was made in MuseScore by me. What was challenging was that it was hard knowing how long a level will take to play, as the composition was made while the game was developed. That made it hard to know how long a piece should be and how many musical features to be made. I made the level pieces therefore quite short that could be repeated. </p>
+              </div>
+              <div class="col-sm-6">
+                <iframe width="540" height="260" src="https://www.youtube.com/embed/enaZ5fKLXdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
+              </div>
+            </div>
           </div>
-        </div>  
-
-      </div>
-
-      <div class="col-sm-6">      
-      <img src="christmashero.png" alt="christmashero" class="image" style="width: 100%">
-
-        <div class = "box">
-          <a class="middle" class ="button" href="#popup2">
-              <div class="texttitle">Christmas Hero</div>
-              <div class="textdesc">Computer game, Unity</div>
-              <div class="textcourse">Computer Game Design DH2650 - Autumn 2019</div>
-             --> <!-- https://christmashero.netlify.com/ --> <!--
-            </a>
-        </div>
-
-        <div id="popup2" class = "overlay">
-          <div class = "popup">
-            <h2> woh </h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">yeah</div>
-          </div>
-        </div>  
-
-      </div>
-
-      <div class="col-sm-6">
-      <img src="bassalg.png" alt="Bass" class="image" style="width: 100%">
-
-        <div class = "box">
-          <a class="middle" class ="button" href="#popup3">
-              <div class="texttitle">Improvisational Algorithm</div>
-              <div class="textdesc">Max/MSP, interaction musician computer</div>
-              <div class="textcourse">Advanced Project Course DM2799 - Autumn 2019</div>
-            </a>
-        </div>
-
-        <div id="popup3" class = "overlay">
-          <div class = "popup">
-            <h2> woh </h2>
-            <a class="close" href="#">&times;</a>
-            <div class="content">yeah</div>
-          </div>
-        </div>  
 
       </div>   
-    </div>   
-     
+  </div>  
 
-  </div>
--->
 
 
 </body>
+
+
+<script type="text/javascript">
+
+
+  // Get the modal
+  var modals = document.getElementsByClassName("modal");
+
+  // Get the button that opens the modal
+  var btns = document.getElementsByClassName("myBtn");
+
+  // Get the <span> element that closes the modal
+  var spans = document.getElementsByClassName("close");
+
+/*
+  // When the user clicks on <span> (x), close the modal
+  spans.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+*/
+
+  for(let i=0;i<btns.length;i++){
+     btns[i].onclick = function() {
+        modals[i].style.display = "block";
+     }
+  }
+
+  for(let i=0;i<spans.length;i++){
+      spans[i].onclick = function() {
+         modals[i].style.display = "none";
+      }
+   }
+
+
+  // When the user clicks on the button, open the modal
+  //btn.onclick = function() {
+    //modal.style.display = "block";
+  //}
+
+</script>
+
+
+
