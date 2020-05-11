@@ -10,6 +10,12 @@ body {
 
 }
 
+@media only screen and (max-width: 600px) {
+	.bakgrundsbild {
+		width: 100%;
+
+	}
+}
 
 a {
 	text-decoration: none;
@@ -43,6 +49,14 @@ a:hover {
 	color: white;
 }
 
+@media only screen and (max-width: 600px) {
+	#boxwelcome {
+		width: 100%;
+		margin-top: -80px;
+
+	}
+}
+
 .namnlogo {
   display: block;
   margin-left: auto;
@@ -52,6 +66,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
 	.namnlogo {
 		width: 100%;
+		margin-top: -50px;
 
 	}
 }
@@ -60,8 +75,14 @@ h2 {
 	padding-top: 40px;
 	text-align: center;
 	letter-spacing: 0.1em;
+}
 
+@media only screen and (max-width: 600px) {
+	h2 {
+		padding-top: 0;
+		margin-left: 25px;
 
+	}
 }
 
 #frontpage {
@@ -73,11 +94,12 @@ h2 {
 	padding-top: 600px;
 }
 
-#frontpage h2 {
-	
-	text-align: center;
-
+@media only screen and (max-width: 600px) {
+	#frontpage {
+		margin-top: -200px;
+	}
 }
+
 
 /* ------------- ABOUT ------------- */
 #boxlocation {
