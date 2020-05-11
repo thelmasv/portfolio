@@ -292,8 +292,9 @@ button {
 
 footer {
 	width: 100%;
-	width: 100vw;
 	background-color: white; 
+	margin-top: 100px;
+	position: absolute;
 
 
 }
@@ -302,7 +303,7 @@ footer p {
 	font-size: 9pt;
 	color: black;
 	text-align: center;
-	padding-top: 2%
+
 }
 
 .bottom {
