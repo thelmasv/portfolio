@@ -287,9 +287,7 @@ h2 {
 
 @media only screen and (max-width: 600px) {
 	#project p {
-		position: absolute;
-		max-width: 80%;
-
+		display: none;
 
 	}
 }
@@ -354,6 +352,13 @@ button {
 
 }
 
+@media only screen and (max-width: 600px) {
+	.textdesc {
+		display: none;
+
+	}
+}
+
 .textcourse {
 	/*background-color: #ada0a0;*/
 	background-color: #5d5d5d;
@@ -364,6 +369,40 @@ button {
 	margin-right: auto;	
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+}
+
+@media only screen and (max-width: 600px) {
+	.textcourse {
+		display: none;	
+
+	}
+}
+
+.textcoursesmall {
+	  position: absolute;
+	  top: 80px;
+	  padding-left: 10px;
+	  color: white;
+	  background-color: grey;
+	  opacity: 80%;
+	  letter-spacing: 0.2em;
+	  font-size: 18pt;
+	  max-width: 60%;
+	  filter: alpha(opacity=10);	
+}
+
+@media screen and (min-width: 600px) {
+  div.textcoursesmall {
+    display: none;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  div.textcoursesmall p {
+    display: none;
+
+  }
 }
 
 @media only screen and (max-width: 600px) {
