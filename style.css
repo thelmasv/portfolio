@@ -5,6 +5,8 @@ body {
 	overflow-y: scroll;
 	/*background-color: #D2CDCD;*/
 	background-color: #E7E4E4;
+
+
 	margin: 0px;
 	padding: 0px;
 
@@ -106,7 +108,7 @@ h2 {
 	height: 150px;
 
 	background: rgba(196, 196, 196, 0.71);
-	background-image: url("bakgrund5.png");
+	background-image: url("bakgrund8.png");
 	background-size: cover;
 }
 
@@ -148,6 +150,8 @@ h2 {
 		margin-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
+		width: 50%;
+		padding-right: 3%;
 
 	}
 }
@@ -180,8 +184,10 @@ h2 {
 	width: 100px;
 	height: 110px;
 	margin: 0 auto;
+	background-image: url("bakgrund8.png");
 	background-color: rgba(74, 74, 74, 0.3);
 	padding: 5px;
+	border-radius: 25px;
 }
 
 #myskills p{
@@ -222,7 +228,7 @@ h2 {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  border-radius: 10%;
+  border-radius: 70px;
   padding-top: 4%;
 
 }
@@ -233,6 +239,7 @@ h2 {
 		height: 10%;
 		margin-right: auto;
 		margin-left: 10%;
+		border-radius: 35px;
 
 
 	}
