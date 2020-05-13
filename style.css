@@ -303,6 +303,25 @@ h2 {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+	.myBtn {
+		display: none;
+
+	}
+}
+
+.myBtn1 {
+	position: absolute;
+	top: 80px;
+	padding-left: 10px;
+	color: white;
+	background-color: grey;
+	opacity: 80%;
+	letter-spacing: 0.2em;
+	max-width: 60%;
+	filter: alpha(opacity=10);
+}
+
 button {
 	background-color: inherit;
 	border: none;
@@ -352,12 +371,7 @@ button {
 
 }
 
-@media only screen and (max-width: 600px) {
-	.textdesc {
-		display: none;
 
-	}
-}
 
 .textcourse {
 	/*background-color: #ada0a0;*/
@@ -371,35 +385,18 @@ button {
 
 }
 
-@media only screen and (max-width: 600px) {
-	.textcourse {
-		display: none;	
 
-	}
-}
 
-.textcoursesmall {
-	  position: absolute;
-	  top: 80px;
-	  padding-left: 10px;
-	  color: white;
-	  background-color: grey;
-	  opacity: 80%;
-	  letter-spacing: 0.2em;
-	  font-size: 18pt;
-	  max-width: 60%;
-	  filter: alpha(opacity=10);	
-}
 
 @media screen and (min-width: 600px) {
-  div.textcoursesmall {
+  div.textcoursesmall  {
     display: none;
 
   }
 }
 
 @media screen and (min-width: 600px) {
-  div.textcoursesmall p {
+  div.textcoursesmall {
     display: none;
 
   }
@@ -423,6 +420,8 @@ footer {
 	background-color: white; 
 	margin-top: 100px;
 	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
 
 
 }
@@ -431,11 +430,12 @@ footer p {
 	font-size: 9pt;
 	color: black;
 	text-align: center;
+	padding-top: 5px;
 
 }
 
 .bottom {
-	margin-left: 50%
+	margin-left: 750px;
 }
 /* --------------------------------- */
 
