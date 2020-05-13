@@ -281,6 +281,7 @@ h2 {
   letter-spacing: 0.3em;
   font-size: 18pt;
   max-width: 60%;
+  filter: alpha(opacity=10);
 }
 
 
