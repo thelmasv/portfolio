@@ -427,8 +427,8 @@ button {
 }
 
 #videoandtitle img {
-	 width: 100%;
-	 height: 100%;
+	 width: 640px;
+	 height: 360px;
 }
 
 @media only screen and (max-width: 600px) {
