@@ -106,7 +106,7 @@ h2 {
 	height: 150px;
 
 	background: rgba(196, 196, 196, 0.71);
-	background-image: url("bakgrund1.png");
+	background-image: url("bakgrund5.png");
 	background-size: cover;
 }
 
@@ -208,6 +208,8 @@ h2 {
 	margin-top: 10%;
 }
 
+
+
 .container {
   position: relative;
   width: 100%;
@@ -225,6 +227,16 @@ h2 {
 
 }
 
+@media only screen and (max-width: 600px) {
+	.image {
+		width: 70%;
+		height: 10%;
+		margin-right: auto;
+		margin-left: 10%;
+
+
+	}
+}
 
 #middle {
   transition: .5s ease;
