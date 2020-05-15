@@ -46,12 +46,12 @@ a:hover {
 }
 
 
-#boxwelcome h1 {
+/*#boxwelcome h1 {
 	text-align: center;
 	font-family: Red Hat Display;
 	position: absolute;
 	color: white;
-}
+}*/
 
 @media only screen and (max-width: 600px) {
 	#boxwelcome {
@@ -91,6 +91,7 @@ h2 {
 	padding-top: 40px;
 	text-align: center;
 	letter-spacing: 0.3em;
+	font-weight: bold; 
 }
 
 @media only screen and (max-width: 600px) {
@@ -151,78 +152,45 @@ h2 {
 
 }
 
-.picofme {
-  width: 400px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  float: left;
-  margin-left: 40%;
-
-}
-
-@media only screen and (max-width: 600px) {
-	.picofme{
-		margin-top: 40px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		padding-right: 3%;
-
-	}
-}
-
 #textofme {
 	width: 60%;
 	font-size: 10pt;
+	float: right;
 }
 
 @media only screen and (max-width: 800px) {
 	#textofme {
 /*		margin-top: 40px;
 		margin-left: 3px;*/
-		margin-right: auto;
-		margin-left: 800px;
-		width: 100%;
+		float: left;
+		margin-left: 50px;
+		width: 80%;
 		font-size: 12pt;
 
 	}
 }
 
-/*#listme {
-	margin-left: 50%;
-	display: all;
-	justify-content: center;	
-}*/
+.picofme {
+  width: 400px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  float: left;
 
-#myskills {
-	width: 100px;
-	height: 110px;
-	margin: 0 auto;
-	margin-top: 30px;
-	background-image: url("bakgrund8.png");
-	background-color: rgba(74, 74, 74, 0.3);
-	padding: 5px;
-	border-radius: 25px;
-}
-
-#myskills p{
-	text-align: center;
-	color: white;
-	padding: 0.5px;
 }
 
 @media only screen and (max-width: 600px) {
-	#myskills {
+	.picofme{
+		border-radius: 50%;
 		margin-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 100%;
-		font-size: 12pt;
-		height: 100%
+		width: 80%;
+		margin-left: 50px;
 
 	}
 }
+
 
 /* ------------- PROJECTS ------------- */
 
@@ -246,6 +214,8 @@ h2 {
   backface-visibility: hidden;
   border-radius: 70px;
   padding-top: 4%;
+  margin-right: auto;
+  margin-left: auto;  
 
 }
 
@@ -275,6 +245,7 @@ h2 {
 #project p {
   position: absolute;
   top: 80px;
+  margin-left: 30px;
   padding-left: 10px;
   color: white;
   background-color: grey;
@@ -298,7 +269,7 @@ h2 {
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -447,49 +418,6 @@ button {
 	}
 }
 
-/* ------------- FOOTER ------------- */
-
-footer {
-	width: 100%;
-	background-color: white; 
-	margin-top: 100px;
-	position: absolute;
-	margin-right: auto;
-	margin-left: auto;
-
-
-}
-
-footer p {
-	font-size: 9pt;
-	color: black;
-	text-align: center;
-	padding-top: 5px;
-
-}
-
-#linkedin a {
-	margin-left: 100%;
-}
-
-#mail a {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media only screen and (max-width: 600px) {
-	#linkedin a {
-		margin-left: 50%;
-
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#mail a {
-		margin-left: 50%;
-
-	}
-}
 /* --------------------------------- */
 
 /* The Modal (background) */
@@ -639,4 +567,157 @@ img {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+/*------------------------*/
+
+
+
+@media only screen and (min-width: 600px) {
+  hr {
+  	display: none;
+  }
+}
+#skillsboxes {
+	margin-top: 100px;
+}
+
+
+#leftbox { 
+    float:left;  
+    background:#E7E4E4; 
+    width:30%; 
+    height:280px; 
+  	margin-left: 5%; 
+
+} 
+
+@media only screen and (max-width: 600px) {
+  #leftbox {
+  	width: 100%;
+  	margin-left: 0px;
+
+  }
+}
+
+#middlebox{ 
+    float:left;  
+    background:#E7E4E4; 
+    width:30%; 
+    height:280px; 
+    background-size: cover;
+} 
+
+@media only screen and (max-width: 600px) {
+  #middlebox {
+  	width: 100%;
+  }
+}
+
+#rightbox{ 
+    float:right; 
+    background:#E7E4E4; 
+    width:30%; 
+    height:280px; 
+    margin-: 5%;
+  	margin-right: 5%;
+
+} 
+
+@media only screen and (max-width: 600px) {
+  #rightbox {
+  	width: 100%;
+  	margin-right: 0px;
+
+  }
+}
+
+
+#skillsboxes h2 {
+	color: grey;
+	letter-spacing: 0.3em;
+	font-size: 16pt;
+	margin-left: 20px;
+	margin-top: -10px;
+	filter: alpha(opacity=10);	
+	text-align: center;	
+
+} 
+
+@media only screen and (max-width: 600px) {
+  #skillsboxes h2 {
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	margin-top: 10px;
+  }
+}
+
+
+#skillsboxes p {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+
+	text-align: center;
+}
+
+
+.imageskills {
+	float:left;
+  opacity: 1;
+  display: block;
+  width: 80%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+/* ------------- FOOTER ------------- */
+
+footer {
+	width: auto;
+	background-color: white; 
+	margin-top: 1000px;
+	position: all;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 80px;
+}
+
+footer p {
+	font-size: 9pt;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+
+}
+
+#linkedin a {
+	margin-left: 100%;
+}
+
+#mail a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	#linkedin a {
+		margin-left: 50%;
+
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#mail a {
+		margin-left: 50%;
+
+	}
 }
