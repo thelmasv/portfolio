@@ -92,6 +92,7 @@ h2 {
 	text-align: center;
 	letter-spacing: 0.3em;
 	font-weight: bold; 
+	font-family: Quicksand;
 }
 
 @media only screen and (max-width: 600px) {
@@ -119,7 +120,7 @@ h2 {
 }
 
 
-/* ------------- ABOUT ------------- */
+/* ===================== ABOUT ===================== */
 #boxlocation {
 	height: 150px;
 
@@ -192,7 +193,7 @@ h2 {
 }
 
 
-/* ------------- PROJECTS ------------- */
+/* ===================== PROJECTS ===================== */
 
 #projectgrid {
 	margin-top: 10%;
@@ -418,7 +419,7 @@ button {
 	}
 }
 
-/* --------------------------------- */
+/* -------------- modal ------------------- */
 
 /* The Modal (background) */
 .modal {
@@ -470,17 +471,9 @@ button {
   cursor: pointer;
 }
 
-/* ------------------- */
-
-.mySlides {
-	display: none;
-}
-
-img {
-	vertical-align: middle;
-}
-
-/* Slideshow container */
+/* -------- slideshow ----------- */
+'
+ /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -493,14 +486,13 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
   margin-top: -22px;
+  padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -511,8 +503,52 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.8);
 }
+
+.mySlides {
+  display:none;
+}
+.active-slide {
+  display:block;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+img {
+	vertical-align: middle;
 
 /* Caption text */
 .bildtext {
@@ -525,44 +561,6 @@ img {
   text-align: center;
   background-color: rgba(0,0,0,0.3)
 }
-
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-/*.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}*/
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/*@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}*/
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
@@ -679,7 +677,7 @@ img {
 
 }
 
-/* ------------- FOOTER ------------- */
+/* ===================== FOOTER ===================== */
 
 footer {
 	width: auto;
