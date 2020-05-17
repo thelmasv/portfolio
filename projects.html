@@ -150,10 +150,10 @@
       <div class="col-sm-4" id ="project">
         <div class = "container">        
           <img src="bassalg.png" alt="Improvisational" class="image">
-          <p>Improvisational algortihm</p>
+          <p>Improvisational algorithm</p>
           <div class="textcoursesmall">
             <button class=myBtn1>
-              <p1 style="font-size: 14pt">Improvisational algortihm</p1><br><p2 style="font-size: 8pt">Max/MSP, interaction musician computer<br>Autumn 2019</p2>
+              <p1 style="font-size: 14pt">Improvisational algorithm</p1><br><p2 style="font-size: 8pt">Max/MSP, interaction musician computer<br>Autumn 2019</p2>
             </button>
           </div>
           <button class="myBtn">
@@ -632,7 +632,7 @@
       <div class="modal-content">
         <span class="close">&times;</span>
           <div class="row" id="videoandtitle">
-            <div class ="row" id="projectpart">
+              <!--
               <div class="col-sm-6">
                 <iframe src="https://player.vimeo.com/video/413636650" width="540" height="260" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </div>    
@@ -649,6 +649,22 @@
                 <iframe width="540" height="260" src="https://www.youtube.com/embed/enaZ5fKLXdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
               </div>
             </div>
+          -->
+            <div class="col-sm-6">
+              <h3></h3>
+              <iframe style="margin-top: 40px" src="https://player.vimeo.com/video/413636650" width="540" height="260" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div> 
+            <div class="col-sm-6">
+                <p><h3 style="font-size: 14pt">RGB/SW</h3>In the reception at Media Technology at KTH, a film project is always produced. In 2016, the traditional film project called RGB/SW was made, that is a story about the super heros Röd, Grön, Blå, Swart and Wit. I was the leader of the music composition team, and also composed many tracks for the film serie. This video is the title intro to the serie and was composed by me and mastered together with Johan Wetterin. The composition was made in MuseScore. <br> <br> Something that was challenging was that the music had to be composed and produced before seeing any film material. I only had the knowledge of the story and the script to base the music on.</p>
+            </div>  
+            <div class="col-sm-6">
+              <h3></h3>
+              <iframe style="margin-top: 20px" width="540" height="260" src="https://www.youtube.com/embed/enaZ5fKLXdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
+            <div class="col-sm-6">
+                <p><h3 style="font-size: 14pt">Christmas Hero</h3>In a Computer game course taken in 2019, a Christmas themed game was developed by me and a team of four others. In the game, the spirit of Christmas had disappeard but was progressively coming back when Christmas gifts were delivered to the right character. The music was therefore progressively becoming more christmassy in terms of Christmas related instruments and melody. In level 1, only wind sound was heard. In level 2, I wanted to make a simple and quite careful melody that felt hopeful and happy but not too christmassy. As I wanted a feeling of continuation between the levels, the beginning of the music in level 3 has the same melody as in level 2, but is then continuing in melody. In the final part, I wanted to create a happy and as christmassy feeling as possible. As the user has reached the end of the game by then, it is relativly short and is not repeating. <br><br>The composition was made in MuseScore by me. What was challenging was that it was hard knowing how long a level will take to play, as the composition was made while the game was developed. That made it hard to know how long a piece should be and how many musical features to be made. I made the level pieces therefore quite short that could be repeated. </p>
+            </div>                      
+          </div>          
           </div>
       </div>   
 
@@ -659,6 +675,7 @@
 
 
 <footer>
+  <p>Don't hesitate to contact me! Even if it's just over a fika :)</p>
   <div class="row">
     <div class="col-sm-6" id="linkedin">
       <a href="https://www.linkedin.com/in/thelmasvenns/" target="_blank"><img src="linkedin.png" style="height: 20px;"></a>
@@ -667,7 +684,7 @@
       <a href="mailto: thelmasv@gmail.com" target="_blank"><img src="mail.png" style="height: 20px;"></a>
     </div>   
   </div>
-  <p>All rights reserved Thelma Svenns | 2020</p>
+  <p id="rights">All rights reserved Thelma Svenns | 2020</p>
 </footer>
 
 
@@ -690,15 +707,15 @@
   // When the user clicks on <span> (x), close the modal
   spans.onclick = function() {
     modal.style.display = "none";
-  }
+  }*/
 
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
+  /*window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
-*/
+  }*/
+
   for(let i=0;i<btns.length;i++){
      btns[i].onclick = function() {
         modals[i].style.display = "block";
@@ -714,7 +731,7 @@
  </script>
 
 
- <script type="text/javascript">
+ <!--<script type="text/javascript">
 
 
 
@@ -746,10 +763,11 @@
       }
    }
 
-</script>
+</script>-->
 
 
 <script type="text/javascript">
+
 (function() {
 
   init(); //on page load - show first slide, hidethe rest
@@ -827,33 +845,6 @@
 
   }
 })();
-
-/*var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-} */ 
 
 </script>
 
