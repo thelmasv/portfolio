@@ -56,7 +56,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
 	#boxwelcome {
 		width: 100%;
-		margin-top: -80px;
+		top: 100px;
 
 	}
 }
@@ -91,7 +91,7 @@ h2 {
 	padding-top: 40px;
 	text-align: center;
 	letter-spacing: 0.3em;
-	font-weight: bold; 
+	 
 	font-family: Quicksand;
 }
 
