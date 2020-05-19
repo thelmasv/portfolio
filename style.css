@@ -6,7 +6,7 @@ body {
 	/*background-color: #D2CDCD;*/
 	/*background-color: #E7E4E4;*/
 	/*background-color: #fbfbfb;*/
-	background-color: #f9f9f9;
+	background-color: #f3f3f3;
 
 
 	margin: 0px;
@@ -37,9 +37,9 @@ a:hover {
 }
 
 #boxwelcome {
-	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 25%;
 
 	left: 0px;
 	top: 300px;
@@ -93,7 +93,7 @@ h2 {
 	padding-top: 40px;
 	text-align: center;
 	letter-spacing: 0.3em;
-	 
+
 	font-family: Quicksand;
 }
 
@@ -101,6 +101,7 @@ h2 {
 	h2 {
 		padding-top: 0;
 		margin-left: 25px;
+		color: grey;
 
 	}
 }
@@ -118,6 +119,7 @@ h2 {
 @media only screen and (max-width: 600px) {
 	#frontpage {
 		padding-top: 90%;
+
 	}
 }
 
@@ -591,7 +593,7 @@ img {
 #leftbox { 
     float:left;  
     /*background:#E7E4E4;*/
-    background: #f9f9f9; 
+    background: #f3f3f3; 
     width:30%; 
     height:280px; 
   	margin-left: 5%; 
@@ -609,7 +611,7 @@ img {
 #middlebox{ 
     float:left;  
     /*background:#E7E4E4;*/
-    background: #f9f9f9; 
+    background: #f3f3f3; 
     width:30%; 
     height:280px; 
     background-size: cover;
@@ -624,7 +626,7 @@ img {
 #rightbox{ 
     float:right; 
     /*background:#E7E4E4;*/
-    background: #f9f9f9; 
+    background: #f3f3f3; 
     width:30%; 
     height:280px; 
     margin-: 5%;
