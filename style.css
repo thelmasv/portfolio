@@ -410,8 +410,8 @@ button {
 }
 
 #videoandtitle img {
-	 width: 640px;
-	 height: 360px;
+	 width: auto;
+	 height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -506,7 +506,7 @@ button {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .mySlides {
@@ -554,6 +554,7 @@ img {
 	vertical-align: middle;
     max-width: 100%;
     max-height: 100%;
+    background-size: contain;
 }
 /* Caption text */
 .bildtext {
