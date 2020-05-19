@@ -4,7 +4,9 @@ body {
   	font-family: "Quicksand";
 	overflow-y: scroll;
 	/*background-color: #D2CDCD;*/
-	background-color: #E7E4E4;
+	/*background-color: #E7E4E4;*/
+	/*background-color: #fbfbfb;*/
+	background-color: #f9f9f9;
 
 
 	margin: 0px;
@@ -587,7 +589,8 @@ img {
 
 #leftbox { 
     float:left;  
-    background:#E7E4E4; 
+    /*background:#E7E4E4;*/
+    background: #f9f9f9; 
     width:30%; 
     height:280px; 
   	margin-left: 5%; 
@@ -604,7 +607,8 @@ img {
 
 #middlebox{ 
     float:left;  
-    background:#E7E4E4; 
+    /*background:#E7E4E4;*/
+    background: #f9f9f9; 
     width:30%; 
     height:280px; 
     background-size: cover;
@@ -618,7 +622,8 @@ img {
 
 #rightbox{ 
     float:right; 
-    background:#E7E4E4; 
+    /*background:#E7E4E4;*/
+    background: #f9f9f9; 
     width:30%; 
     height:280px; 
     margin-: 5%;
