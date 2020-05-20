@@ -401,7 +401,7 @@ button {
 
 #videoandtitle p {
 	padding-left: 70px;
-	padding-top: 30px;
+	padding-top: 70px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -540,6 +540,7 @@ button {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  animation-fill-mode: forwards;  
 }
 
 @-webkit-keyframes fade {
