@@ -603,9 +603,9 @@ img {
     float:left;  
     /*background:#E7E4E4;*/
     background: #f3f3f3; 
-    width:30%; 
+    width:25%; 
     height:280px; 
-  	margin-left: 5%; 
+  	margin-left: 12.5%; 
 
 } 
 
@@ -621,7 +621,7 @@ img {
     float:left;  
     /*background:#E7E4E4;*/
     background: #f3f3f3; 
-    width:30%; 
+    width:25%; 
     height:280px; 
     background-size: cover;
 } 
@@ -636,10 +636,9 @@ img {
     float:right; 
     /*background:#E7E4E4;*/
     background: #f3f3f3; 
-    width:30%; 
+    width:25%; 
     height:280px; 
-    margin-: 5%;
-  	margin-right: 5%;
+  	margin-right: 12.5%;
 
 } 
 
