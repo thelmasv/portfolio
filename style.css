@@ -7,11 +7,17 @@ body {
 	/*background-color: #E7E4E4;*/
 	/*background-color: #fbfbfb;*/
 	background-color: #f3f3f3;
-
-
 	margin: 0px;
 	padding: 0px;
+	overflow-x: hidden;
 
+}
+
+@media only screen and (max-width: 600px) {
+	body{
+		overflow-x: hidden;
+
+	}
 }
 
 @media only screen and (max-width: 600px) {
