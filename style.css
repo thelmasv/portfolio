@@ -253,10 +253,10 @@ h2 {
   padding-left: 10px;
   color: white;
   background-color: grey;
-  opacity: 80%;
+  opacity: 85%;
   letter-spacing: 0.3em;
-  font-size: 18pt;
-  max-width: 60%;
+  font-size: 1.55vw;
+  max-width: 70%;
   filter: alpha(opacity=10);
 }
 
