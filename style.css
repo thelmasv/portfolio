@@ -143,11 +143,13 @@ h2 {
 
 .namnlogo {
 	margin-top: -2%;
+	position: all;
 }
 
 #namnlogohela {
 	height: 50px;
 	padding-left: 20px;
+	position: fi
 }
 
 .aboutme {
