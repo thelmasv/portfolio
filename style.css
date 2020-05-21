@@ -10,8 +10,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
-	background-size: cover; 
-	background-repeat: no-repeat;"
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -19,6 +18,12 @@ body {
 		overflow-x: hidden;
 
 	}
+}
+
+.bakgrundsbild {
+	background-image: url('bakgrund2.png');
+	background-size: cover; 
+	background-repeat: no-repeat;"	
 }
 
 @media only screen and (max-width: 600px) {
@@ -83,7 +88,6 @@ a:hover {
 }
 
 .namnlogo {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
