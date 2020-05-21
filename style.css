@@ -20,7 +20,7 @@ body {
 	}
 }
 
-.bakgrundsbild {
+#bakgrundsbild {
 	background-image: url('bakgrund2.png');
 	background-size: cover; 
 	background-repeat: no-repeat;"	
