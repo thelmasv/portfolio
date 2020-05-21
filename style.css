@@ -23,7 +23,7 @@ body {
 #bakgrundsbild {
 	background-image: url('bakgrund2.png');
 	background-size: cover; 
-	background-repeat: no-repeat;"	
+	background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 600px) {
