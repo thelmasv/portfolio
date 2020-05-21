@@ -403,6 +403,7 @@ button {
 #videoandtitle p {
 	padding-left: 70px;
 	padding-top: 70px;
+	padding-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
