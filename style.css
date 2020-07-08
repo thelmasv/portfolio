@@ -88,6 +88,9 @@ a:hover {
 }
 
 .namnlogo {
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
 	/*position: all;*/
 }
 
