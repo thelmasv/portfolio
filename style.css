@@ -67,8 +67,6 @@ a:hover {
 }*/
 
 
-
-
 @media only screen and (min-width: 800px) {
 	.project p {
 		position: relative;
@@ -88,18 +86,18 @@ a:hover {
 	padding-top: 20%;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 	.namnlogo {
 		width: 100%;
 		top: 100px;
 
 	}
-}
+}*/
 
 @media only screen and (max-width: 600px) {
 	.namnlogo {
 		width: 100%;
-		margin-top: -50px;
+		margin-top: 100px;
 
 	}
 }
@@ -113,9 +111,7 @@ h2 {
 
 @media only screen and (max-width: 600px) {
 	h2 {
-		padding-top: 0;
 		margin-left: 25px;
-		color: grey;
 
 	}
 }
@@ -129,10 +125,19 @@ nav {
 	position: static;
 }
 
+@media only screen and (max-width: 600px) {
+	nav {
+		margin-top: -80%;
+		padding-top: 90%;
+
+	}
+}
+
+
 #navbar {
   position: fixed; /* Make it stick/fixed */
   top: -100px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
+  width: 99.99%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 5;
 
@@ -155,14 +160,14 @@ nav {
   color: black;
 }
 
-
-
 @media only screen and (max-width: 600px) {
-	nav {
-		padding-top: 90%;
+	#navbar {
+		padding-top: 2px;
+
 
 	}
 }
+
 
 
 /* ===================== ABOUT ===================== */
@@ -634,7 +639,6 @@ img {
 
 
 /*------------------------*/
-
 
 
 @media only screen and (min-width: 600px) {
