@@ -1,4 +1,4 @@
-body {
+html,body {
     /*background: #f9f3f3;*/
   	font-family: "Yu Gothic UI", "sans serif"; 
   	font-family: "Quicksand";
@@ -9,6 +9,10 @@ body {
 	background-color: #f3f3f3;
 	margin: 0px;
 	padding: 0px;
+	overflow-x: hidden;
+	height: 100%;
+	overflow-y: scroll;
+	overflow: initial !important;
 	overflow-x: hidden;
 
 }
@@ -21,9 +25,10 @@ body {
 }
 
 #bakgrundsbild {
-	background-image: url('bakgrund2.png');
+	background-image: url('pics/bakgrund2.png');
 	background-size: cover; 
 	background-repeat: no-repeat;
+	height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -32,7 +37,16 @@ body {
 
 	}
 }
+#about {
+	height: 200%;
+}
 
+#projects {
+	height: 100%;
+	margin-top: 1050px;
+	margin-bottom: 10%;
+	
+}
 
 
 a {
@@ -67,7 +81,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 800px) {
-	#project p {
+	.project p {
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -91,7 +105,6 @@ h2 {
 	padding-top: 40px;
 	text-align: center;
 	letter-spacing: 0.3em;
-
 	font-family: Quicksand;
 }
 
@@ -104,18 +117,45 @@ h2 {
 	}
 }
 
-#frontpage {
-	position: absolute;
+nav {
 	width: 100%;
 	height: 150px;
 	left: 0px;
-	top: 0px;
-	padding-top: 45%;
+	top: 0;
 	/*padding-top: 600px;*/
+	position: static;
 }
 
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: -100px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 5;
+
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 14pt;
+  background-color: rgba(243,243,243,0.8);
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
 @media only screen and (max-width: 600px) {
-	#frontpage {
+	nav {
 		padding-top: 90%;
 
 	}
@@ -125,12 +165,13 @@ h2 {
 /* ===================== ABOUT ===================== */
 #boxlocation {
 	height: 150px;
-
 	background: rgba(196, 196, 196, 0.71);
 	background-image: url("bakgrund2.png");
 	background-size: cover;
 
 }
+
+
 
 @media only screen and (max-width: 600px) {
 	#boxlocation{
@@ -142,25 +183,29 @@ h2 {
 
 .namnlogo {
 	margin-top: -2%;
-	position: all;
+	/*position: all;*/
 }
 
 #namnlogohela {
 	height: 50px;
 	padding-left: 20px;
-	position: fi
+	/*position: fixed;*/
 }
 
-.aboutme {
-	margin-top: 10%;
+.part {
+	margin-top: 100px;
+}
 
 
+#aboutme {
+	margin-top: 5%;
 }
 
 #textofme {
 	width: 60%;
 	font-size: 12pt;
 	float: right;
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -199,7 +244,7 @@ h2 {
 /* ===================== PROJECTS ===================== */
 
 #projectgrid {
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 
@@ -246,7 +291,7 @@ h2 {
   text-align: center;
 }*/
 
-#project p {
+.project p {
   position: absolute;
   top: 80px;
   left: 30px;
@@ -264,7 +309,7 @@ h2 {
 
 
 @media only screen and (max-width: 600px) {
-	#project p {
+	.project p {
 		display: none;
 
 	}
@@ -299,6 +344,7 @@ h2 {
 	letter-spacing: 0.2em;
 	max-width: 60%;
 	filter: alpha(opacity=10);
+
 }
 
 button {
@@ -336,6 +382,7 @@ button {
 
 }*/
 
+
 .textdesc {
 	/*background-color: #ddc4c4;*/
 	background-color: #efefef;
@@ -347,9 +394,11 @@ button {
 	margin-right: auto;
 	margin-top: 10%;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	display: inline;
+	vertical-align: middle;
+	display: flex;
 
 }
-
 
 
 .textcourse {
@@ -357,10 +406,13 @@ button {
 	background-color: #5d5d5d;
 	color: white;
 	font-size: 12px;
-	max-width: 70%;
+	max-width: 30%;
 	margin-left: auto;
 	margin-right: auto;	
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	display: inline;
+	vertical-align: flex;
+	padding: 2px;
 
 }
 
@@ -386,7 +438,7 @@ button {
 	}
 }
 
-#videoandtitle h3 {
+.videoandtitle h3 {
 	margin-right: auto;
 	margin-left: auto;
 	font-size: 30pt;
@@ -394,33 +446,33 @@ button {
 
 
 
-#videoandtitle iframe {
+.videoandtitle iframe {
 	margin-left: auto;
 	margin-right: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-#videoandtitle p {
+.videoandtitle p {
 	padding-left: 70px;
 	padding-top: 70px;
 	padding-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-	#videoandtitle p {
+	.videoandtitle p {
 		padding-left: 5px;
 
 	}
 }
 
-#videoandtitle img {
+.videoandtitle img {
 	 width: auto;
 	 height: auto;
 }
 
 @media only screen and (max-width: 600px) {
-	#videoandtitle img {
+	.videoandtitle img {
 		max-width: 100%;
 		max-height: 100%;
 
@@ -480,7 +532,7 @@ button {
 }
 
 /* -------- slideshow ----------- */
-'
+
  /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -532,6 +584,7 @@ button {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+
 }
 
 .active, .dot:hover {
@@ -590,12 +643,12 @@ img {
   	display: none;
   }
 }
-#skillsboxes {
+.skillsboxes {
 	margin-top: 100px;
 }
 
 
-#leftbox { 
+.leftbox { 
     float:left;  
     /*background:#E7E4E4;*/
     background: #f3f3f3; 
@@ -606,14 +659,14 @@ img {
 } 
 
 @media only screen and (max-width: 600px) {
-  #leftbox {
+  .leftbox {
   	width: 100%;
   	margin-left: 0px;
 
   }
 }
 
-#middlebox{ 
+.middlebox{ 
     float:left;  
     /*background:#E7E4E4;*/
     background: #f3f3f3; 
@@ -623,12 +676,12 @@ img {
 } 
 
 @media only screen and (max-width: 600px) {
-  #middlebox {
+  .middlebox {
   	width: 100%;
   }
 }
 
-#rightbox{ 
+.rightbox{ 
     float:right; 
     /*background:#E7E4E4;*/
     background: #f3f3f3; 
@@ -639,7 +692,7 @@ img {
 } 
 
 @media only screen and (max-width: 600px) {
-  #rightbox {
+  .rightbox {
   	width: 100%;
   	margin-right: 0px;
 
@@ -647,7 +700,7 @@ img {
 }
 
 
-#skillsboxes h2 {
+.skillsboxes h2 {
 	color: grey;
 	letter-spacing: 0.3em;
 	font-size: 16pt;
@@ -659,7 +712,7 @@ img {
 } 
 
 @media only screen and (max-width: 600px) {
-  #skillsboxes h2 {
+  .skillsboxes h2 {
   	margin-left: auto;
   	margin-right: auto;
   	text-align: center;
@@ -668,7 +721,7 @@ img {
 }
 
 
-#skillsboxes p {
+.skillsboxes p {
 	color: black;
 	margin-left: auto;
 	margin-right: auto;
@@ -697,22 +750,23 @@ img {
 footer {
 	width: auto;
 	background-color: white; 
-	margin-top: 1000px;
-	position: all;
+	/*position: all;*/
 	margin-right: auto;
 	margin-left: auto;
-	padding-bottom: 10px;
+	margin-bottom: auto;
 }
 
 #rights {
 	font-size: 9pt;
 	color: black;
 	text-align: center;
-	padding-top: 60px;	
-	padding-bottom: 5px;
+	margin-top: 100px;	
+	padding-bottom: 15px;
+
 }
+
 footer p {
-	font-size: 9pt;
+	font-size: 14pt;
 	color: black;
 	text-align: center;
 	padding-top: 5px;
