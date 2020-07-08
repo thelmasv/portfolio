@@ -2,19 +2,14 @@ html,body {
     /*background: #f9f3f3;*/
   	font-family: "Yu Gothic UI", "sans serif"; 
   	font-family: "Quicksand";
-	overflow-y: scroll;
-	/*background-color: #D2CDCD;*/
-	/*background-color: #E7E4E4;*/
-	/*background-color: #fbfbfb;*/
 	background-color: #f3f3f3;
 	margin: 0px;
 	padding: 0px;
-	overflow-x: hidden;
-	height: 100%;
+	overflow-x: hidden !important;
 	overflow-y: scroll;
+	height: 100%;
 	overflow: initial !important;
-	overflow-x: hidden;
-
+	
 }
 
 @media only screen and (max-width: 600px) {
@@ -62,7 +57,7 @@ a:hover {
      cursor:pointer;  
 }
 
-#boxwelcome {
+#namnbox {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 25%;
@@ -73,7 +68,7 @@ a:hover {
 
 
 @media only screen and (max-width: 600px) {
-	#boxwelcome {
+	#namnbox {
 		width: 100%;
 		top: 100px;
 
@@ -92,6 +87,9 @@ a:hover {
 	}
 }
 
+.namnlogo {
+	/*position: all;*/
+}
 
 @media only screen and (max-width: 600px) {
 	.namnlogo {
@@ -181,16 +179,12 @@ nav {
 	}
 }
 
-.namnlogo {
-	margin-top: -2%;
-	/*position: all;*/
-}
 
-#namnlogohela {
+/*#namnlogohela {
 	height: 50px;
 	padding-left: 20px;
 	/*position: fixed;*/
-}
+
 
 .part {
 	margin-top: 100px;
