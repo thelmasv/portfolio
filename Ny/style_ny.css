@@ -12,150 +12,235 @@ html,body {
 
 }
 
-@media only screen and (max-width: 600px) {
-	body{
-		overflow-x: hidden;
 
+/*============== NY STARTSIDA ==============*/
+#colorblock {
+	width: 60%;
+	height: 50em;
+	padding-bottom: ;
+	background-color: #E4BC97;
+}
+
+@media only screen and (max-width: 600px) {
+  #colorblock {
+	position: absolute;
+	width: 100%;
+	height: 50vw;
+	left: 0px;
+	top: 0px;
+  }
+}
+
+.moi{
+	position: relative;
+	width: 40vw;
+	height: 40vw;
+	margin-left: 15%;
+	margin-top: 7em;
+	padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .moi {
+  	margin-top: 0px;
+  	margin-left: 0px;
+
+  }
+}
+
+.namnlogo {
+	position: absolute;
+	margin-left: 65vw;
+	top: 5%;
+	width: 30vw;
+	height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.namnlogo{
+		margin-left: 45%;
+		width: 50%;
 	}
 }
 
-#bakgrundsbild {
-	background-image: url('pics/bakgrund2.png');
-	background-size: cover; 
-	background-repeat: no-repeat;
-	height: 100%;
+
+#textofme{
+	position: absolute;
+	margin-left: 65vw;
+	top: 20vw;
+	width: 30vw;
+	height: auto;
+	font-size: 10pt;
+	line-height: 17.5px;
 }
 
 @media only screen and (max-width: 600px) {
-	.bakgrundsbild {
+	#textofme{
+		margin-left: 10vw;
+		margin-top: 40%;
 		width: 100%;
-
+		padding-right: 10vw;
+		font-size: 3vw;
 	}
-}
-
-
-#about {
-	height: 200%;
-}
-
-#projects {
-	height: 100%;
-	margin-top: 1050px;
-	margin-bottom: 10%;
-	
 }
 
 
 a {
-	text-decoration: none;
-	color: white;
-    text-decoration: none;
+	text-decoration: none;	
+}
+
+
+h1 {
+	color: black;
+	font-size: 10pt;
+	font-weight: bold;
 
 }
 
-a:hover {
-     color:#c9c9c9;
-     text-decoration:none; 
-     cursor:pointer;  
-}
-
-/*#namnbox {
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 25%;
-	left: 0px;
-	top: 300px;
-
-}*/
-
-
-@media only screen and (min-width: 800px) {
-	.project p {
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-
-		left: 0px;
-		top: 240px;
-
-	}
-}
-
-.namnlogo {
-	margin-left: auto;
-	margin-right: auto;
-	/*position: all;*/
-	padding-top: 35%;
+#navhome{
 
 }
 
-/*@media only screen and (max-width: 600px) {
-	.namnlogo {
+.skills {
+	position: absolute;
+	margin-left: 65vw;
+	top: 35em;
+	width: 30vw;
+	height: auto;
+	text-align: center;	
+}
+
+@media only screen and (max-width: 600px) {
+	.skills{
+		margin-left: 2vw;
+		margin-right: 2vw;
 		width: 100%;
-		top: 100px;
-
 	}
+}
+
+.projectsnew {
+	position: absolute;
+	margin-left: 65vw;
+	top: 40em;
+	width: 30vw;
+	height: auto;
+	text-align: center;	
+}
+
+@media only screen and (max-width: 600px) {
+	.projectsnew{
+		margin-left: 2vw;
+		margin-right: 2vw;
+		width: 100%;
+	}
+}
+
+.arrow{
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);	
+	transition: width 2s;
+
+}
+
+.arrow:hover{
+	top: 5%;
+}
+
+/*==============================================================*/
+@media only screen and (min-width: 600px) {
+  hr {
+  	display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #skillspart {
+  	margin-top: 150%;
+  }
+}
+
+.skillsboxes {
+	/*margin-top: 100px;*/
+	display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .skillsboxes {
+  	width: 100%;
+  	margin-left: 0px;
+  	display: block;
+  }
+}
+
+
+.box { 
+    /*float:left; */ 
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25vw; 
+    height:280px; 
+	background-size: cover;    
+} 
+
+@media only screen and (max-width: 600px) {
+  .box {
+  	width: 100%;
+
+  }
+}
+
+.skillsboxes h3 {
+	color: grey;
+	letter-spacing: 0.3em;
+	font-size: 16pt;
+	margin-left: 20px;
+	margin-top: 10%;
+	filter: alpha(opacity=10);	
+	text-align: center;	
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .skillsboxes h2 {
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	margin-top: 10px;
+  }
+}
+
+
+.skillsboxes p {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+/*.imageskills {
+	float:left;
+	opacity: 1;
+	display: block;
+	width: 100vw;
+	height: 100vw;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	padding-top: 4%;
+	margin-right: auto;
+	margin-left: auto;
+	position: fixed;
 }*/
 
-@media only screen and (max-width: 600px) {
-	.namnlogo {
-		max-width: 100%;
-		margin-top: 5%;
-		padding-bottom: -5%;
-
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.namnlogo {
-		/*margin-top: -100px;*/
-		margin-top: -15%;
-		max-width: 100%;
-		padding-bottom: 0;
-
-	}
-}
-
-h2 {
-	padding-top: 40px;
-	text-align: center;
-	letter-spacing: 0.3em;
-	font-family: Quicksand;
-}
-
-@media only screen and (max-width: 600px) {
-	h2 {
-		margin-left: 25px;
-
-	}
-}
-
-nav {
-	width: 100%;
-	height: 150px;
-	left: 0px;
-	top: 0;
-	/*padding-top: 600px;*/
-	position: static;
-}
-
-@media only screen and (max-width: 600px) {
-	nav {
-		margin-top: -80%;
-		padding-top: 90%;
-
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	nav {
-		margin-top: -80%;
-		padding-top: 80%;
-
-	}
-}
+/* ==============================================================
 
 
+=================================================================================== */
 
 #navbar {
   position: fixed; /* Make it stick/fixed */
@@ -163,9 +248,7 @@ nav {
   width: 99.99%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 5;
-
 }
-
 /* Style the navbar links */
 #navbar a {
   float: right;
@@ -177,96 +260,35 @@ nav {
   font-size: 14pt;
   background-color: rgba(243,243,243,0.8);
 }
-
 #navbar a:hover {
   background-color: #ddd;
   color: black;
 }
-
 @media only screen and (max-width: 600px) {
 	#navbar {
 		padding-top: 2px;
-
-
 	}
 }
-
 
 
 /* ===================== ABOUT ===================== */
-#boxlocation {
-	height: 150px;
-	background: rgba(196, 196, 196, 0.71);
-	background-image: url("bakgrund2.png");
-	background-size: cover;
 
+
+/* ===================== PROJECTS ===================== */
+
+#projectpart{
+	margin-top: 15vw;
+	margin-bottom: 100px;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-	#boxlocation{
-		height: 250px;
-
-
-	}
-}
-
-
-/*#namnlogohela {
-	height: 50px;
-	padding-left: 20px;
-	/*position: fixed;*/
-
-
-.part {
-	margin-top: 100px;
-}
-
-
-#aboutme {
-	margin-top: 5%;
-}
-
-#textofme {
-	width: 60%;
-	font-size: 12pt;
-	float: right;
+h3 {
+	text-align: center;
+	font-size: 30pt;
+	letter-spacing: 0.3em;	
+	margin-top: 10%;
+  	/*background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #E4BC97 40%);*/
 
 }
-
-@media only screen and (max-width: 800px) {
-	#textofme {
-/*		margin-top: 40px;
-		margin-left: 3px;*/
-		float: left;
-		margin-left: 50px;
-		width: 80%;
-		font-size: 12pt;
-
-	}
-}
-
-.picofme {
-  width: 400px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  float: left;
-
-}
-
-@media only screen and (max-width: 600px) {
-	.picofme{
-		border-radius: 50%;
-		margin-top: 40px;
-		margin-right: 50px;
-		width: 80%;
-		margin-left: 40px;
-
-	}
-}
-
 
 /* ===================== PROJECTS ===================== */
 
