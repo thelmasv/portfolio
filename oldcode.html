@@ -24,134 +24,165 @@
 
 <!-- ==================== MAINPAGE ====================  -->  
 <!-- bilden --> 
-<a name="hometo">
 
-  <header>
-    <section id= "colorblock">
-      <div class =" container">
-        <div class="row">
-          <img src="pics/moi_sv.jpg" alt="thelma" class="moi">
-        </div>
-      </div>
-    </section>
+<header id= "colorblock">
+  <div class =" container">
+    <div class="row">
+      <img src="pics/moi_sv.jpg" alt="thelma" class="moi">
+    </div>
 
-    <section class="row">
+    <div class="row">
       <img src="pics/ts.png" alt="namnlogo" class="namnlogo">      
+    </div>
+    
+    <div class="row">
+      <p id="textofme">
+        Hello there!<br><br>
+        I'm Thelma and I'm a dog/plant/movie-lover engineer in Interactive Media Technology with a specialisation within Sound and Music Computing from KTH (Stockholm/Sweden). My biggest passions are music, design, and UX/UI, and I feel myself being at the right place when I get to be creative and analytic.<br><br>I'm currently looking for a job within UX, design or the Sound and Music Computing field.<br><br> This portfolio is still under construction and the aim is to at least be able to show some of the projects I've done. Feel free to check them out below!
+      </p>
+    </div>
 
-      <article>
-        <p id="textofme">
-          Hello there!<br><br>
-          I'm Thelma and I'm an engineer in Interactive Media Technology from KTH (Stockholm/Sweden). My biggest passions are music, design, and UX/UI, and I feel myself being at the right place when I get to be creative and analytic. I have further a specialisation within Sound and Music computing, which gives me additional competence combining sound and UX.<br><br>I'm currently looking for a job within UX, design or the Sound and Music Computing field.<br><br> This portfolio is still under construction and the aim is to at least be able to show some of the projects I've done. Feel free to check them out below!
-        </p>
-      </article>
-
-      <article id="navhome">
-        <nav class="skills">
-          <a href= "#skillsto" style="text-decoration: none;">
-            <h1 id="skills">More about me</h1>
-            <i class="arrow"></i>   
-          </a>
-        </nav>
-
-        <nav class="projectsnew">
-          <a href= "#projecto" style="text-decoration: none;">
-            <h1 id="projectsnew">Projects</h1>
-            <i class="arrow"></i>
-            <div style="margin-top: -15px;">
-              <i class="arrow"></i>        
-            </div>
-          </a>
-        </nav>  
-      </article>
-
-    </section>
-
-      
-    <nav id="navbar">
-      <a href="#contactto">Contact</a>    
-      <a href="#projecto">Projects</a>
-      <a href="#hometo">Home</a>
+    <nav class="skills">
+      <a href= "#skills" style="text-decoration: none;">
+        <h1 id="skills">Learn more</h1>
+        <i class="arrow"></i>   
+      </a>
     </nav>
 
-  </header>
-</a>
+    <nav class="projectsnew">
+      <a href= "#projects" style="text-decoration: none;">
+        <h1 id="projectsnew">Projects</h1>
+        <i class="arrow"></i>
+        <i class="arrow"></i>        
+      </a>
+
+    </nav>    
 
 
-<!-- ==================== SKILLS ====================  -->  
+  </div>
+  
+</header>
+
+<div id="navbar">
+  <a href="#contact">Contact</a>    
+  <a href="#projecto">Projects</a>
+  <a href="#about">About</a>
+</div>
+
+<!-- === GAMLA VERSIONEN ==================
+<header id ="bakgrundsbild">
+  <div class = "container">
+    <div class="row">
+      <img src="pics/namnbakg.png" alt="namnlogo" class="namnlogo">
+    </div>
+
+    <nav class="row">
+      <div class="col-sm-6">
+        <a href="#about"><h2 id="about">About</h2></a>
+      </div>
+      <div class="col-sm-6">
+        <a href="#projecto"><h2 id="projectsheader">Projects</h2></a>
+      </div>  
+-->
+      <!--<p style="padding-left: 15px; color: black; font-size: 16pt">< \This site is under construction/ ></p>-->
+<!--    
+    </nav>
+
+  </div>
+</header>
 
 <main>
-  <section>
-    <article id="skillspart">
-        <hr style="width: 40%; margin-left: auto; margin-right: auto; margin-top: 100px">
-        <a name="skillsto">
-          <h3 style="margin-bottom: 5%;">More about me</h3>
+
+  <div id="navbar">
+    <a href="#contact">Contact</a>    
+    <a href="#projecto">Projects</a>
+    <a href="#about">About</a>
+  </div>
+
+==================================== --> 
+  <!-- ==================== ABOUT ====================  -->  
+
+<!--
+  <section id="about">
+
+    <article class="part">
+        <a name="about">
+          <h2>About</h2>
         </a>
+        <div class="row" id="aboutme">
+          <div class="col-sm-6">
+            <p id="textofme">
+              Hello there!<br><br>
+              I'm Thelma and I'm a dog/plant/movie-lover engineer in Interactive Media Technology with a specialisation within Sound and Music Computing from KTH (Stockholm/Sweden). My biggest passions are music, design, and UX/UI, and I feel myself being at the right place when I get to be creative and analytic.<br><br>I'm currently looking for a job within UX, design or the Sound and Music Computing field.<br><br> This portfolio is still under construction and the aim is to at least be able to show some of the projects I've done. Feel free to check them out in "Projects"!
+      
+            </p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="pics/moi.jpg" alt="picture of Thelma" class="picofme">
+          </div> 
+        </div>
+
+-->
+  <section>
+    <article>
+        <hr style="width: 40%; margin-left: auto; margin-right: auto; margin-top: 100px">
         
         <div class = "skillsboxes">  
-          <div class = "box"> 
+          <div class = "leftbox"> 
             <h2>Keywords</h2> 
             <p>Tech<br>Music/Sound<br>Interaction<br>Design<br>Sustainability<br>Development<br>UX/UI</p>
           </div>  
             
-          <div class = "box" style="background-image: url(pics/me1.jpg);"> 
+          <div class = "middlebox" style="background-image: url(pics/me1.jpg);background-size: cover;"> 
           </div> 
             
-          <div class = "box"> 
+          <div class = "rightbox"> 
             <h2>Programming Skills</h2> 
             <p>Python<br>Max/MSP<br>SuperCollider<br>HTML/CSS<br>JavaScript<br>SQL/XML</p>          
-          </div> 
 
-          <div class = "box" style="background-color: #e497a4;">
           </div> 
         </div> 
 
         <div class="skillsboxes"> 
-          <div class = "box" style="background-color: #97c5e4;"> 
+          <div class = "leftbox" style="background-image: url(pics/me2.JPG); background-size: cover;"> 
           </div>  
             
-          <div class = "box"> 
+          <div class = "middlebox"> 
             <h2>Languages</h2> 
             <p style="padding-top: 40px;">Swedish<br>Finnish<br>English</p>   
           </div> 
             
-          <div class = "box" style="background-image: url(pics/jagprog.jpg);">
-          </div> 
-
-          <div class = "box"> 
-            <h2>Other</h2> 
-            <p style="padding-top: 40px;">Swedish<br>Finnish<br>English</p>   
+          <div class = "rightbox" style="background-image: url(pics/jagprog.jpg);background-size: cover;">
           </div> 
         </div> 
 
 
         <div class = "skillsboxes">     
-          <div class = "box"> 
+          <div class = "leftbox"> 
             <h2>Audio Specialities</h2> 
             <p>Audio engineering<br>Music Informatics<br>Signal Processing<br>Interactive Sound<br></p>
           </div>  
             
-          <div class = "box" style="background-image: url(pics/gotland.jpeg);"> 
+          <div class = "middlebox" style="background-image: url(pics/skor.jpg);background-size: cover;"> 
           </div> 
             
-          <div class = "box"> 
+          <div class = "rightbox"> 
             <h2>Design Tool Skills</h2> 
             <p>Figma<br>Adobe XD<br>Marvel<br>Gimp<br>Photoshop/Illustrator <em>(a little)</em><br></p>
           </div> 
-
-          <div class = "box" style="background-color: #c6e497;"> 
-          </div>
         </div>
 
-
-
     </article>
+
   </section>
-
-
     <!-- ==================== PROJECTS ==================== --> 
-  <section>
-    <article id="projectpart">
-      <hr style="width: 40%; margin-left: auto; margin-right: auto; margin-top: 100px">
+
+
+  <section id="projects">
+    <article class="part">
+    <hr style="width: 40%; margin-left: auto; margin-right: auto; margin-top: 100px">
+
       <a name="projecto">
         <h3>Projects</h3>
       </a>
@@ -741,7 +772,7 @@
       <!-- .......... WEBSITE ............... -->
           <div class="col-sm-4 project">
             <div class = "container">
-              <img src="pics/nyport.png" alt="Remark" class="image">   
+              <img src="pics/hemsida.png" alt="Remark" class="image">   
               <p>This website</p>
               <div class="textcoursesmall">
                 <button class=myBtn1>
@@ -873,7 +904,7 @@
 </main>
 
 <!-- ========== FOOTER ========== -->
-<a name="contactto">
+<a name="contact">
 
   <footer>
     <p>Don't hesitate to contact me! Even if it's just over a fika :)</p>
@@ -1064,3 +1095,11 @@ function scrollFunction() {
 }
 </script>
 
+<script>
+
+$('.round').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.arrow').toggleClass('bounceAlpha');
+});
+</script>
