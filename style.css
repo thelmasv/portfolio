@@ -19,234 +19,6 @@ html,body {
 	}
 }
 
-/*============== NY STARTSIDA ==============*/
-#colorblock {
-	width: 60%;
-	height: 50em;
-	padding-bottom: ;
-	background-color: #E4BC97;
-}
-
-@media only screen and (max-width: 600px) {
-  #colorblock {
-	position: absolute;
-	width: 100%;
-	height: 50vw;
-	left: 0px;
-	top: 0px;
-  }
-}
-
-.moi{
-	position: relative;
-	width: 40vw;
-	height: 40vw;
-	margin-left: 15%;
-	margin-top: 7em;
-	padding: 5%;
-}
-
-@media only screen and (max-width: 600px) {
-  .moi {
-  	margin-top: 0px;
-  	margin-left: 0px;
-
-  }
-}
-
-.namnlogo {
-	position: absolute;
-	margin-left: 65%;
-	top: 5%;
-	width: 30vw;
-	height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-	.namnlogo{
-		margin-left: 45%;
-		width: 50%;
-	}
-}
-
-
-#textofme{
-	position: absolute;
-	margin-left: 65%;
-	top: 20vw;
-	width: 30vw;
-	height: auto;
-	font-size: 10pt;
-	line-height: 17.5px;
-}
-
-@media only screen and (max-width: 600px) {
-	#textofme{
-		margin-left: 10vw;
-		margin-top: 40%;
-		width: 100%;
-		padding-right: 10vw;
-		font-size: 3vw;
-	}
-}
-
-
-a {
-	text-decoration: none;	
-}
-
-
-h1 {
-	color: black;
-	font-size: 10pt;
-	font-weight: bold;
-
-}
-
-#navhome{
-
-}
-
-.skills {
-	position: absolute;
-	margin-left: 65%;
-	top: 35em;
-	width: 30vw;
-	height: auto;
-	text-align: center;	
-}
-
-@media only screen and (max-width: 600px) {
-	.skills{
-		margin-left: 2vw;
-		margin-right: 2vw;
-		width: 100%;
-	}
-}
-
-.projectsnew {
-	position: absolute;
-	margin-left: 65%;
-	top: 40em;
-	width: 30vw;
-	height: auto;
-	text-align: center;	
-}
-
-@media only screen and (max-width: 600px) {
-	.projectsnew{
-		margin-left: 2vw;
-		margin-right: 2vw;
-		width: 100%;
-	}
-}
-
-.arrow{
-	border: solid black;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);	
-	transition: width 2s;
-
-}
-
-.arrow:hover{
-	top: 5%;
-}
-
-==============================================================
-
-@media only screen and (min-width: 600px) {
-  hr {
-  	display: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #skillspart {
-  	margin-top: 150%;
-  }
-}
-
-.skillsboxes {
-	/*margin-top: 100px;*/
-	display: flex;
-}
-
-@media only screen and (max-width: 600px) {
-  .skillsboxes {
-  	width: 100%;
-  	margin-left: 0px;
-  	display: block;
-  }
-}
-
-
-.box { 
-    /*float:left; */ 
-    /*background:#E7E4E4;*/
-    background: #f3f3f3; 
-    width:25vw; 
-    height:280px; 
-	background-size: cover;    
-} 
-
-@media only screen and (max-width: 600px) {
-  .box {
-  	width: 100%;
-
-  }
-}
-
-
-.skillsboxes h2 {
-	color: grey;
-	letter-spacing: 0.3em;
-	font-size: 16pt;
-	margin-left: 20px;
-	margin-top: 10%;
-	filter: alpha(opacity=10);	
-	text-align: center;	
-
-} 
-
-@media only screen and (max-width: 600px) {
-  .skillsboxes h2 {
-  	margin-left: auto;
-  	margin-right: auto;
-  	text-align: center;
-  	margin-top: 10px;
-  }
-}
-
-
-.skillsboxes p {
-	color: black;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	text-align: center;
-}
-
-
-/*.imageskills {
-	float:left;
-	opacity: 1;
-	display: block;
-	width: 100vw;
-	height: 100vw;
-	transition: .5s ease;
-	backface-visibility: hidden;
-	padding-top: 4%;
-	margin-right: auto;
-	margin-left: auto;
-	position: fixed;
-
-}*/
-
-/* ==============================================================
 #bakgrundsbild {
 	background-image: url('pics/bakgrund2.png');
 	background-size: cover; 
@@ -296,7 +68,7 @@ a:hover {
 
 }*/
 
-/*
+
 @media only screen and (min-width: 800px) {
 	.project p {
 		position: relative;
@@ -312,6 +84,7 @@ a:hover {
 .namnlogo {
 	margin-left: auto;
 	margin-right: auto;
+	/*position: all;*/
 	padding-top: 35%;
 
 }
@@ -324,7 +97,6 @@ a:hover {
 	}
 }*/
 
-/*
 @media only screen and (max-width: 600px) {
 	.namnlogo {
 		max-width: 100%;
@@ -336,6 +108,7 @@ a:hover {
 
 @media only screen and (min-width: 992px) {
 	.namnlogo {
+		/*margin-top: -100px;*/
 		margin-top: -15%;
 		max-width: 100%;
 		padding-bottom: 0;
@@ -362,41 +135,8 @@ nav {
 	height: 150px;
 	left: 0px;
 	top: 0;
+	/*padding-top: 600px;*/
 	position: static;
-}
-
-nav #about {
-	animation-duration: 2s;
-	animation-name: slideright;
-}
-
-nav #projectsheader {
-	animation-duration: 2s;
-	animation-name: slideleft;
-}
-
-@keyframes slideright {
-  from {
-    margin-right: 10%;
-    top: 0px;
-  }
-
-  to {
-    margin-right: 0%;
-    top: 100%;
-  }
-}
-
-@keyframes slideleft {
-  from {
-    margin-right: -10%;
-    top: 0px;
-  }
-
-  to {
-    margin-right: 0%;
-    top: 100%;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -416,7 +156,7 @@ nav #projectsheader {
 }
 
 
-=================================================================================== */
+
 #navbar {
   position: fixed; /* Make it stick/fixed */
   top: -100px; /* Hide the navbar 50 px outside of the top view */
@@ -454,8 +194,7 @@ nav #projectsheader {
 
 
 /* ===================== ABOUT ===================== */
-
-/*#boxlocation {
+#boxlocation {
 	height: 150px;
 	background: rgba(196, 196, 196, 0.71);
 	background-image: url("bakgrund2.png");
@@ -479,7 +218,7 @@ nav #projectsheader {
 	padding-left: 20px;
 	/*position: fixed;*/
 
-/*
+
 .part {
 	margin-top: 100px;
 }
@@ -498,6 +237,8 @@ nav #projectsheader {
 
 @media only screen and (max-width: 800px) {
 	#textofme {
+/*		margin-top: 40px;
+		margin-left: 3px;*/
 		float: left;
 		margin-left: 50px;
 		width: 80%;
@@ -526,27 +267,13 @@ nav #projectsheader {
 	}
 }
 
-*/
+
 /* ===================== PROJECTS ===================== */
-
-#projectpart{
-	margin-top: 15vw;
-	margin-bottom: 100px;
-}
-
-h3 {
-	text-align: center;
-	font-size: 30pt;
-	letter-spacing: 0.3em;	
-	margin-top: 10%;
-  	/*background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #E4BC97 40%);*/
-
-}
-
 
 #projectgrid {
 	margin-top: 5%;
 }
+
 
 
 .container {
@@ -568,7 +295,7 @@ h3 {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 	.image {
 		width: 70%;
 		height: 10%;
@@ -738,7 +465,7 @@ button {
 	}
 }
 
-.videoandtitle h4 {
+.videoandtitle h3 {
 	margin-right: auto;
 	margin-left: auto;
 	font-size: 30pt;
@@ -937,7 +664,112 @@ img {
 /*------------------------*/
 
 
+@media only screen and (min-width: 600px) {
+  hr {
+  	display: none;
+  }
+}
+.skillsboxes {
+	margin-top: 100px;
+}
 
+
+.leftbox { 
+    float:left;  
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25%; 
+    height:280px; 
+  	margin-left: 12.5%; 
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .leftbox {
+  	width: 100%;
+  	margin-left: 0px;
+
+  }
+}
+
+.middlebox{ 
+    float:left;  
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25%; 
+    height:280px; 
+    background-size: cover;
+} 
+
+@media only screen and (max-width: 600px) {
+  .middlebox {
+  	width: 100%;
+  }
+}
+
+.rightbox{ 
+    float:right; 
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25%; 
+    height:280px; 
+  	margin-right: 12.5%;
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .rightbox {
+  	width: 100%;
+  	margin-right: 0px;
+
+  }
+}
+
+
+.skillsboxes h2 {
+	color: grey;
+	letter-spacing: 0.3em;
+	font-size: 16pt;
+	margin-left: 20px;
+	margin-top: -10px;
+	filter: alpha(opacity=10);	
+	text-align: center;	
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .skillsboxes h2 {
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	margin-top: 10px;
+  }
+}
+
+
+.skillsboxes p {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+
+	text-align: center;
+}
+
+
+.imageskills {
+	float:left;
+  opacity: 1;
+  display: block;
+  width: 80%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
 
 /* ===================== FOOTER ===================== */
 
