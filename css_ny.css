@@ -1,7 +1,7 @@
 html,body {
-  /*background: #f9f3f3;*/
-	font-family: "Yu Gothic UI", "sans serif"; 
-	font-family: "Quicksand";
+    /*background: #f9f3f3;*/
+  	font-family: "Yu Gothic UI", "sans serif"; 
+  	font-family: "Quicksand";
 	background-color: #f3f3f3;
 	margin: 0px;
 	padding: 0px;
@@ -9,7 +9,6 @@ html,body {
 	overflow-y: scroll;
 	height: 100%;
 	overflow: initial !important;
-  scroll-behavior: smooth;
 
 }
 
@@ -26,7 +25,6 @@ html,body {
 	position: absolute;
 	width: 100%;
 	height: 50vw;
-  padding-bottom: 200vw;
 	left: 0px;
 	top: 0px;
   }
@@ -38,13 +36,13 @@ html,body {
 	height: 40vw;
 	margin-left: 15%;
 	margin-top: 7em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+	padding: 5%;
 }
 
 @media only screen and (max-width: 600px) {
   .moi {
-  	margin-top: 10%;
-  	margin-left: 10%;
+  	margin-top: 0px;
+  	margin-left: 0px;
 
   }
 }
@@ -91,10 +89,14 @@ a {
 }
 
 
-#navhome p{
-  color: black;
-  font-size: 10pt;
-  font-weight: bold;
+h1 {
+	color: black;
+	font-size: 10pt;
+	font-weight: bold;
+
+}
+
+#navhome{
 
 }
 
@@ -108,17 +110,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  #navhome {
-  }
-
-}
-
-@media only screen and (max-width: 600px) {
 	.skills{
 		margin-left: 2vw;
 		margin-right: 2vw;
 		width: 100%;
-    margin-top: 5rem;
 	}
 }
 
@@ -136,7 +131,6 @@ a {
 		margin-left: 2vw;
 		margin-right: 2vw;
 		width: 100%;
-    margin-top: 5em;
 	}
 }
 
@@ -162,7 +156,6 @@ a {
   }
 }
 
-/*
 @media only screen and (max-width: 600px) {
   #skillspart {
   	margin-top: 150%;
@@ -170,9 +163,8 @@ a {
 }
 
 .skillsboxes {
+	/*margin-top: 100px;*/
 	display: flex;
-  margin-bottom: 0px;
-  flex-direction: row;
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,71 +172,18 @@ a {
   	width: 100%;
   	margin-left: 0px;
   	display: block;
-
   }
-}*/
-
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 
-.grid > div::before {
-  padding-bottom: 100%;
-  display: block;
-}
-
-.grid > div {
-  /* ... */
-  break-inside: avoid-column; /* Prevent element from breaking */
-  page-break-inside: avoid; /* Prevent element from breaking in Firefox */
-
-}
-
-.grid > div::before,
-.grid > div > img, 
-.grid > div > h2,
-.grid > div > p {
-  grid-area: 1 / 1 / 2 / 2;
-  text-align: center;
-}
-
-.grid > div > h2 {
-  color: grey;
-  letter-spacing: 0.3em;
-  font-size: 18pt;
-  padding-top: 2vw;
-  filter: alpha(opacity=10);  
-}
-
-.grid > div > p {
-  margin-top: 10%;
-  text-align: center;
-  font-size: 12pt;
-
-}
-
-.grid > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/*
 .box { 
-  background: #f3f3f3; 
-  width:25%; 
-	background-size: cover; 
-  margin-bottom: -100px; 
+    /*float:left; */ 
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25vw; 
+    height:280px; 
+	background-size: cover;    
 } 
-
-.box:after {
-  display: block;  
-  padding-bottom: 100%
-
-}
 
 @media only screen and (max-width: 600px) {
   .box {
@@ -253,12 +192,13 @@ a {
   }
 }
 
+
 .skillsboxes h2 {
 	color: grey;
 	letter-spacing: 0.3em;
 	font-size: 16pt;
-  font-size: 1.4vw;
-	padding-top: 2vw;
+	margin-left: 20px;
+	margin-top: 10%;
 	filter: alpha(opacity=10);	
 	text-align: center;	
 
@@ -278,12 +218,10 @@ a {
 	color: black;
 	margin-left: auto;
 	margin-right: auto;
-  padding-bottom: 50%;
+	padding-top: 10px;
 	text-align: center;
-  font-size: 12pt;
-  font-size: 1vw;
 }
-*/
+
 
 /*.imageskills {
 	float:left;
@@ -300,6 +238,143 @@ a {
 }*/
 
 /* ==============================================================
+#bakgrundsbild {
+	background-image: url('pics/bakgrund2.png');
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 100%;
+}
+@media only screen and (max-width: 600px) {
+	.bakgrundsbild {
+		width: 100%;
+	}
+}
+#about {
+	height: 200%;
+}
+#projects {
+	height: 100%;
+	margin-top: 1050px;
+	margin-bottom: 10%;
+	
+}
+a {
+	text-decoration: none;
+	color: white;
+    text-decoration: none;
+}
+a:hover {
+     color:#c9c9c9;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+/*#namnbox {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25%;
+	left: 0px;
+	top: 300px;
+}*/
+
+/*
+
+@media only screen and (min-width: 800px) {
+	.project p {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0px;
+		top: 240px;
+	}
+}
+.namnlogo {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 35%;
+
+}
+/*@media only screen and (max-width: 600px) {
+	.namnlogo {
+		width: 100%;
+		top: 100px;
+	}
+}*/
+
+/*
+@media only screen and (max-width: 600px) {
+	.namnlogo {
+		max-width: 100%;
+		margin-top: 5%;
+		padding-bottom: -5%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.namnlogo {
+		margin-top: -15%;
+		max-width: 100%;
+		padding-bottom: 0;
+	}
+}
+h2 {
+	padding-top: 40px;
+	text-align: center;
+	letter-spacing: 0.3em;
+	font-family: Quicksand;
+}
+@media only screen and (max-width: 600px) {
+	h2 {
+		margin-left: 25px;
+	}
+}
+nav {
+	width: 100%;
+	height: 150px;
+	left: 0px;
+	top: 0;
+	position: static;
+}
+
+nav #about {
+	animation-duration: 2s;
+	animation-name: slideright;
+}
+nav #projectsheader {
+	animation-duration: 2s;
+	animation-name: slideleft;
+}
+@keyframes slideright {
+  from {
+    margin-right: 10%;
+    top: 0px;
+  }
+  to {
+    margin-right: 0%;
+    top: 100%;
+  }
+}
+@keyframes slideleft {
+  from {
+    margin-right: -10%;
+    top: 0px;
+  }
+  to {
+    margin-right: 0%;
+    top: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+	nav {
+		margin-top: -80%;
+		padding-top: 90%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	nav {
+		margin-top: -80%;
+		padding-top: 80%;
+	}
+}
 
 
 =================================================================================== */
@@ -322,12 +397,10 @@ a {
   font-size: 14pt;
   background-color: rgba(243,243,243,0.8);
 }
-
 #navbar a:hover {
   background-color: #ddd;
   color: black;
 }
-
 @media only screen and (max-width: 600px) {
 	#navbar {
 		padding-top: 2px;
@@ -337,7 +410,64 @@ a {
 
 /* ===================== ABOUT ===================== */
 
+/*#boxlocation {
+#boxlocation {
+	height: 150px;
+	background: rgba(196, 196, 196, 0.71);
+	background-image: url("bakgrund2.png");
+	background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+	#boxlocation{
+		height: 250px;
+	}
+}
+/*#namnlogohela {
+	height: 50px;
+	padding-left: 20px;
+	/*position: fixed;*/
 
+/*
+
+.part {
+	margin-top: 100px;
+}
+#aboutme {
+	margin-top: 5%;
+}
+#textofme {
+	width: 60%;
+	font-size: 12pt;
+	float: right;
+}
+
+@media only screen and (max-width: 800px) {
+	#textofme {
+
+		float: left;
+		margin-left: 50px;
+		width: 80%;
+		font-size: 12pt;
+	}
+}
+.picofme {
+  width: 400px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+@media only screen and (max-width: 600px) {
+	.picofme{
+		border-radius: 50%;
+		margin-top: 40px;
+		margin-right: 50px;
+		width: 80%;
+		margin-left: 40px;
+	}
+}
+
+*/
 /* ===================== PROJECTS ===================== */
 
 #projectpart{
@@ -345,7 +475,7 @@ a {
 	margin-bottom: 100px;
 }
 
-h1 {
+h3 {
 	text-align: center;
 	font-size: 30pt;
 	letter-spacing: 0.3em;	
@@ -366,7 +496,6 @@ h1 {
   position: relative;
   width: 100%;
 }
-
 .image {
   opacity: 1;
   display: block;
@@ -381,6 +510,7 @@ h1 {
 
 }
 
+@media only screen and (max-width: 800px) {
 @media only screen and (max-width: 600px) {
 	.image {
 		width: 70%;
@@ -388,27 +518,15 @@ h1 {
 		margin-right: auto;
 		margin-left: 10%;
 		border-radius: 35px;
-
-
 	}
 }
 
-/*#middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}*/
 
-.project h2 {
+.project p {
   position: absolute;
   top: 80px;
   left: 30px;
-  padding: 3px 0px 3px 10px;
+  padding-left: 10px;
   color: white;
   background-color: grey;
   opacity: 85%;
@@ -418,14 +536,11 @@ h1 {
   filter: alpha(opacity=10);
 }
 
-
 @media only screen and (max-width: 600px) {
 	.project p {
 		display: none;
-
 	}
 }
-
 .myBtn {
   transition: .5s ease;
   opacity: 0;
@@ -436,15 +551,11 @@ h1 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 @media only screen and (max-width: 600px) {
 	.myBtn {
 		display: none;
-
 	}
 }
-
-
 .myBtn1 {
 	position: absolute;
 	top: 80px;
@@ -455,22 +566,14 @@ h1 {
 	letter-spacing: 0.2em;
 	max-width: 60%;
 	filter: alpha(opacity=10);
-
 }
-
 button {
 	background-color: inherit;
 	border: none;
-
 }
-
 .container:hover .image {
   opacity: 0.3;
 }
-
-/*.container:hover #middle {
-  opacity: 1;
-}*/
 
 .container:hover .myBtn {
   opacity: 1;
@@ -482,18 +585,13 @@ button {
   font-size: 16px;
   padding: 16px 32px;
   font-family: "Quicksand";
-
 }
-
 /*.texttitle {
 	background-color: #D6B2AD;
 	color: white;
 	font-size: 16px;
 	padding: 16px 32px;
-
 }*/
-
-
 .textdesc {
 	/*background-color: #ddc4c4;*/
 	background-color: #efefef;
@@ -508,10 +606,7 @@ button {
 	display: inline;
 	vertical-align: middle;
 	display: flex;
-
 }
-
-
 .textcourse {
 	/*background-color: #ada0a0;*/
 	background-color: #5d5d5d;
@@ -524,74 +619,55 @@ button {
 	display: inline;
 	/*vertical-align: flex;*/
 	padding: 2px;
-
 }
-
-
 @media screen and (min-width: 600px) {
   div.textcoursesmall  {
     display: none;
-
   }
 }
-
 @media screen and (min-width: 600px) {
   div.textcoursesmall {
     display: none;
-
   }
 }
-
 @media only screen and (max-width: 600px) {
 	iframe {
 		width: 100%;
-
 	}
 }
 
-.videoandtitle h3 {
+.videoandtitle h4 {
 	margin-right: auto;
 	margin-left: auto;
 	font-size: 30pt;
 }
-
-
-
 .videoandtitle iframe {
 	margin-left: auto;
 	margin-right: auto;
     max-width: 100%;
     max-height: 100%;
 }
-
 .videoandtitle p {
 	padding-left: 70px;
 	padding-top: 70px;
 	padding-right: 10px;
 }
-
 @media only screen and (max-width: 600px) {
 	.videoandtitle p {
 		padding-left: 5px;
-
 	}
 }
-
 .videoandtitle img {
 	 width: auto;
 	 height: auto;
 }
-
 @media only screen and (max-width: 600px) {
 	.videoandtitle img {
 		max-width: 100%;
 		max-height: 100%;
-
 	}
 }
-
 /* -------------- modal ------------------- */
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -604,9 +680,7 @@ button {
   overflow: auto; /* Enable scroll if needed */
   background-color: grey; /* Fallback color */
   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-
 }
-
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -616,17 +690,13 @@ button {
   width: 80%; /* Could be more or less, depending on screen size */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
-
 @media only screen and (max-width: 600px) {
 	.modal-content {
 		width: 93%;
 		margin-left: 2px;
 		margin-right: auto;
-
 	}
 }
-
-
 /* The Close Button */
 .close {
   color: #aaa;
@@ -634,23 +704,19 @@ button {
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
 /* -------- slideshow ----------- */
-
  /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -666,25 +732,21 @@ button {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.5);
 }
-
 .mySlides {
   display:none;
 }
 .active-slide {
   display:block;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
@@ -695,13 +757,10 @@ button {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -710,17 +769,14 @@ button {
   animation-duration: 1.5s;
   animation-fill-mode: forwards;  
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 img {
 	vertical-align: middle;
     max-width: 100%;
@@ -738,13 +794,10 @@ img {
   text-align: center;
   background-color: rgba(0,0,0,0.3)
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-
 /*------------------------*/
 
 
@@ -752,6 +805,107 @@ img {
   hr {
   	display: none;
   }
+}
+.skillsboxes {
+	margin-top: 100px;
+}
+
+
+.leftbox { 
+    float:left;  
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25%; 
+    height:280px; 
+  	margin-left: 12.5%; 
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .leftbox {
+  	width: 100%;
+  	margin-left: 0px;
+
+  }
+}
+
+.middlebox{ 
+    float:left;  
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25%; 
+    height:280px; 
+    background-size: cover;
+} 
+
+@media only screen and (max-width: 600px) {
+  .middlebox {
+  	width: 100%;
+  }
+}
+
+.rightbox{ 
+    float:right; 
+    /*background:#E7E4E4;*/
+    background: #f3f3f3; 
+    width:25%; 
+    height:280px; 
+  	margin-right: 12.5%;
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .rightbox {
+  	width: 100%;
+  	margin-right: 0px;
+
+  }
+}
+
+
+.skillsboxes h2 {
+	color: grey;
+	letter-spacing: 0.3em;
+	font-size: 16pt;
+	margin-left: 20px;
+	margin-top: -10px;
+	filter: alpha(opacity=10);	
+	text-align: center;	
+
+} 
+
+@media only screen and (max-width: 600px) {
+  .skillsboxes h2 {
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	margin-top: 10px;
+  }
+}
+
+
+.skillsboxes p {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+
+	text-align: center;
+}
+
+
+.imageskills {
+	float:left;
+  opacity: 1;
+  display: block;
+  width: 80%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 /* ===================== FOOTER ===================== */
@@ -764,63 +918,41 @@ footer {
 	margin-left: auto;
 	margin-bottom: auto;
 }
-
 #rights {
 	font-size: 9pt;
 	color: black;
 	text-align: center;
 	margin-top: 100px;	
 	padding-bottom: 15px;
-
 }
-
 footer p {
 	font-size: 14pt;
 	color: black;
 	text-align: center;
 	padding-top: 5px;
-
 }
-
 #contacticons {
 	display: flex;
 	justify-content: center;
-
-
 }
-
-
-
 #mail {
 	margin-right: 10px;
 	margin-left: 10px;
 }
-
-
-
-
 @media only screen and (max-width: 600px) {
 	#linkedin a {
 		margin-left: 50%;
-
 	}
 }
-
 @media only screen and (max-width: 600px) {
 	#mail a {
 		margin-left: 50%;
-
 	}
 }
-
 /* ===================== BUTTONS FPR SELECTING ===================== */
-
-
 .show {
   display: block;
 }
-
-
 /* Style the buttons */
 .btn {
   border: none;
@@ -829,11 +961,9 @@ footer p {
   background-color: #f1f1f1;
   cursor: pointer;
 }
-
 .btn:hover {
   background-color: #ddd;
 }
-
 .btn.active {
   background-color: #666;
   color: white;
