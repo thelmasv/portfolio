@@ -1,7 +1,7 @@
 html,body {
-    /*background: #f9f3f3;*/
-  	font-family: "Yu Gothic UI", "sans serif"; 
-  	font-family: "Quicksand";
+  /*background: #f9f3f3;*/
+	font-family: "Yu Gothic UI", "sans serif"; 
+	font-family: "Quicksand";
 	background-color: #f3f3f3;
 	margin: 0px;
 	padding: 0px;
@@ -9,153 +9,301 @@ html,body {
 	overflow-y: scroll;
 	height: 100%;
 	overflow: initial !important;
+  scroll-behavior: smooth;
 
 }
 
-@media only screen and (max-width: 600px) {
-	body{
-		overflow-x: hidden;
 
+/*============== NY STARTSIDA ==============*/
+#colorblock {
+	width: 60%;
+	height: 50em;
+  background: rgb(228,188,151);
+  background: linear-gradient(90deg, rgba(228,188,151,1) 97%, rgba(243,243,243,1) 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  #colorblock {
+	position: absolute;
+	width: 100%;
+	height: 50vw;
+  padding-bottom: 200vw;
+	left: 0px;
+	top: 0px;
+  }
+}
+
+.moi{
+	position: relative;
+	width: 40vw;
+	height: 40vw;
+	margin-left: 15%;
+	margin-top: 7em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+@media only screen and (max-width: 600px) {
+  .moi {
+  	margin-top: 10%;
+  	margin-left: 10%;
+
+  }
+}
+
+.namnlogo {
+	position: absolute;
+	margin-left: 65vw;
+	top: 5%;
+	width: 30vw;
+	height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.namnlogo{
+		margin-left: 45%;
+		width: 50%;
 	}
 }
 
-#bakgrundsbild {
-	background-image: url('pics/bakgrund2.png');
-	background-size: cover; 
-	background-repeat: no-repeat;
-	height: 100%;
+
+#textofme{
+	position: absolute;
+	margin-left: 65vw;
+	top: 20vw;
+	width: 30vw;
+	height: auto;
+	font-size: 10pt;
+	line-height: 17.5px;
 }
 
 @media only screen and (max-width: 600px) {
-	.bakgrundsbild {
+	#textofme{
+		margin-left: 10vw;
+		margin-top: 40%;
 		width: 100%;
-
+		padding-right: 10vw;
+		font-size: 3vw;
 	}
-}
-
-
-#about {
-	height: 200%;
-}
-
-#projects {
-	height: 100%;
-	margin-top: 1050px;
-	margin-bottom: 10%;
-	
 }
 
 
 a {
-	text-decoration: none;
-	color: white;
-    text-decoration: none;
+	text-decoration: none;	
+}
+
+
+#navhome p{
+  color: black;
+  font-size: 10pt;
+  font-weight: bold;
 
 }
 
-a:hover {
-     color:#c9c9c9;
-     text-decoration:none; 
-     cursor:pointer;  
+.skills {
+	position: absolute;
+	margin-left: 65vw;
+	top: 35em;
+	width: 30vw;
+	height: auto;
+	text-align: center;	
 }
 
-/*#namnbox {
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 25%;
-	left: 0px;
-	top: 300px;
-
-}*/
-
-
-@media only screen and (min-width: 800px) {
-	.project p {
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-
-		left: 0px;
-		top: 240px;
-
-	}
-}
-
-.namnlogo {
-	margin-left: auto;
-	margin-right: auto;
-	/*position: all;*/
-	padding-top: 35%;
+@media only screen and (max-width: 600px) {
+  #navhome {
+  }
 
 }
 
-/*@media only screen and (max-width: 600px) {
-	.namnlogo {
+@media only screen and (max-width: 600px) {
+	.skills{
+		margin-left: 2vw;
+		margin-right: 2vw;
 		width: 100%;
-		top: 100px;
-
+    margin-top: 5rem;
 	}
+}
+
+.projectsnew {
+	position: absolute;
+	margin-left: 65vw;
+	top: 40em;
+	width: 30vw;
+	height: auto;
+	text-align: center;	
+}
+
+@media only screen and (max-width: 600px) {
+	.projectsnew{
+		margin-left: 2vw;
+		margin-right: 2vw;
+		width: 100%;
+    margin-top: 5em;
+	}
+}
+
+.arrow{
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);	
+	transition: width 2s;
+
+}
+
+.arrow:hover{
+	top: 5%;
+}
+
+/*==============================================================*/
+@media only screen and (min-width: 600px) {
+  hr {
+  	display: none;
+  }
+}
+
+/*
+@media only screen and (max-width: 600px) {
+  #skillspart {
+  	margin-top: 150%;
+  }
+}
+
+.skillsboxes {
+	display: flex;
+  margin-bottom: 0px;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .skillsboxes {
+  	width: 100%;
+  	margin-left: 0px;
+  	display: block;
+
+  }
 }*/
 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+
+.grid > div::before {
+  padding-bottom: 100%;
+  display: block;
+}
+
+.grid > div {
+  /* ... */
+  break-inside: avoid-column; /* Prevent element from breaking */
+  page-break-inside: avoid; /* Prevent element from breaking in Firefox */
+
+}
+
+.grid > div::before,
+.grid > div > img, 
+.grid > div > h2,
+.grid > div > p {
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: center;
+}
+
+.grid > div > h2 {
+  color: grey;
+  letter-spacing: 0.3em;
+  font-size: 18pt;
+  padding-top: 2vw;
+  filter: alpha(opacity=10);  
+}
+
+.grid > div > p {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 12pt;
+
+}
+
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*
+.box { 
+  background: #f3f3f3; 
+  width:25%; 
+	background-size: cover; 
+  margin-bottom: -100px; 
+} 
+
+.box:after {
+  display: block;  
+  padding-bottom: 100%
+
+}
+
 @media only screen and (max-width: 600px) {
-	.namnlogo {
-		max-width: 100%;
-		margin-top: 5%;
-		padding-bottom: -5%;
+  .box {
+  	width: 100%;
 
-	}
+  }
 }
 
-@media only screen and (min-width: 992px) {
-	.namnlogo {
-		/*margin-top: -100px;*/
-		margin-top: -15%;
-		max-width: 100%;
-		padding-bottom: 0;
-
-	}
-}
-
-h2 {
-	padding-top: 40px;
-	text-align: center;
+.skillsboxes h2 {
+	color: grey;
 	letter-spacing: 0.3em;
-	font-family: Quicksand;
-}
+	font-size: 16pt;
+  font-size: 1.4vw;
+	padding-top: 2vw;
+	filter: alpha(opacity=10);	
+	text-align: center;	
+
+} 
 
 @media only screen and (max-width: 600px) {
-	h2 {
-		margin-left: 25px;
-
-	}
-}
-
-nav {
-	width: 100%;
-	height: 150px;
-	left: 0px;
-	top: 0;
-	/*padding-top: 600px;*/
-	position: static;
-}
-
-@media only screen and (max-width: 600px) {
-	nav {
-		margin-top: -80%;
-		padding-top: 90%;
-
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	nav {
-		margin-top: -80%;
-		padding-top: 80%;
-
-	}
+  .skillsboxes h2 {
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	margin-top: 10px;
+  }
 }
 
 
+.skillsboxes p {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+  padding-bottom: 50%;
+	text-align: center;
+  font-size: 12pt;
+  font-size: 1vw;
+}
+*/
+
+/*.imageskills {
+	float:left;
+	opacity: 1;
+	display: block;
+	width: 100vw;
+	height: 100vw;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	padding-top: 4%;
+	margin-right: auto;
+	margin-left: auto;
+	position: fixed;
+}*/
+
+/* ==============================================================
+
+
+=================================================================================== */
 
 #navbar {
   position: fixed; /* Make it stick/fixed */
@@ -163,9 +311,7 @@ nav {
   width: 99.99%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 5;
-
 }
-
 /* Style the navbar links */
 #navbar a {
   float: right;
@@ -186,87 +332,28 @@ nav {
 @media only screen and (max-width: 600px) {
 	#navbar {
 		padding-top: 2px;
-
-
 	}
 }
-
 
 
 /* ===================== ABOUT ===================== */
-#boxlocation {
-	height: 150px;
-	background: rgba(196, 196, 196, 0.71);
-	background-image: url("bakgrund2.png");
-	background-size: cover;
 
+
+/* ===================== PROJECTS ===================== */
+
+#projectpart{
+	margin-top: 15vw;
+	margin-bottom: 100px;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-	#boxlocation{
-		height: 250px;
-
-
-	}
-}
-
-
-/*#namnlogohela {
-	height: 50px;
-	padding-left: 20px;
-	/*position: fixed;*/
-
-
-.part {
-	margin-top: 100px;
-}
-
-
-#aboutme {
-	margin-top: 5%;
-}
-
-#textofme {
-	width: 60%;
-	font-size: 12pt;
-	float: right;
+h1 {
+	text-align: center;
+	font-size: 30pt;
+	letter-spacing: 0.3em;	
+	margin-top: 10%;
+  	/*background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #E4BC97 40%);*/
 
 }
-
-@media only screen and (max-width: 800px) {
-	#textofme {
-/*		margin-top: 40px;
-		margin-left: 3px;*/
-		float: left;
-		margin-left: 50px;
-		width: 80%;
-		font-size: 12pt;
-
-	}
-}
-
-.picofme {
-  width: 400px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  float: left;
-
-}
-
-@media only screen and (max-width: 600px) {
-	.picofme{
-		border-radius: 50%;
-		margin-top: 40px;
-		margin-right: 50px;
-		width: 80%;
-		margin-left: 40px;
-
-	}
-}
-
 
 /* ===================== PROJECTS ===================== */
 
@@ -318,13 +405,11 @@ nav {
   text-align: center;
 }*/
 
-.project p {
+.project h2 {
   position: absolute;
   top: 80px;
   left: 30px;
-  padding-left: 10px;
-  /*margin-left: 30px;
-  padding-left: 10px;*/
+  padding: 3px 0px 3px 10px;
   color: white;
   background-color: grey;
   opacity: 85%;
@@ -668,107 +753,6 @@ img {
   hr {
   	display: none;
   }
-}
-.skillsboxes {
-	margin-top: 100px;
-}
-
-
-.leftbox { 
-    float:left;  
-    /*background:#E7E4E4;*/
-    background: #f3f3f3; 
-    width:25%; 
-    height:280px; 
-  	margin-left: 12.5%; 
-
-} 
-
-@media only screen and (max-width: 600px) {
-  .leftbox {
-  	width: 100%;
-  	margin-left: 0px;
-
-  }
-}
-
-.middlebox{ 
-    float:left;  
-    /*background:#E7E4E4;*/
-    background: #f3f3f3; 
-    width:25%; 
-    height:280px; 
-    background-size: cover;
-} 
-
-@media only screen and (max-width: 600px) {
-  .middlebox {
-  	width: 100%;
-  }
-}
-
-.rightbox{ 
-    float:right; 
-    /*background:#E7E4E4;*/
-    background: #f3f3f3; 
-    width:25%; 
-    height:280px; 
-  	margin-right: 12.5%;
-
-} 
-
-@media only screen and (max-width: 600px) {
-  .rightbox {
-  	width: 100%;
-  	margin-right: 0px;
-
-  }
-}
-
-
-.skillsboxes h2 {
-	color: grey;
-	letter-spacing: 0.3em;
-	font-size: 16pt;
-	margin-left: 20px;
-	margin-top: -10px;
-	filter: alpha(opacity=10);	
-	text-align: center;	
-
-} 
-
-@media only screen and (max-width: 600px) {
-  .skillsboxes h2 {
-  	margin-left: auto;
-  	margin-right: auto;
-  	text-align: center;
-  	margin-top: 10px;
-  }
-}
-
-
-.skillsboxes p {
-	color: black;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-
-	text-align: center;
-}
-
-
-.imageskills {
-	float:left;
-  opacity: 1;
-  display: block;
-  width: 80%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  padding-top: 4%;
-  margin-right: auto;
-  margin-left: auto;
-
 }
 
 /* ===================== FOOTER ===================== */
