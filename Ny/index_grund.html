@@ -7,29 +7,32 @@
 
   <link rel="stylesheet" href="/docs/3.4/dist/css/bootstrap.min.css"> 
   <link rel="icon" href="namnicon.png">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="style_grund.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Red Hat Display' rel='stylesheet'>
 </head>
 
+<!-- ==================================== HOME ============================================= -->
 <body>
 
-<!-- ==================================== HOME ============================================= -->
+  <header>
 
-  <a name="hometo">
-
-    <header>
-      <section id="colorblock" class="panel" data-color="lightgrey">
-        <img src="pics/moisv.jpg" alt="thelma" class="picofme">
-        <img src="pics/ts.png" alt="logothelmasvenns" class="logo">
+    <div>
+      <section id="colorblock">
+        <img src="pics/moisv.jpg" alt="thelma" class="picofme">    
       </section>
-      
+    </div>
+    
+    <img src="pics/ts.png" alt="logothelmasvenns" class="logo">
 
+    <div>
       <section id="homeabout">
-        <h1 class="textofme">Hello there!</h1>
-        <p class="textofme">I'm an engineer in Interactive Media Technology and I solve problems through user centered design. My biggest passions are <span style="font-weight: bold;">music, design, and UX/UI</span>, and I feel myself being at the right place when I get to be creative and analytic. I have further a specialisation within Sound and Music computing, which gives me additional competence combining sound and UX.<br><br>I'm currently looking for a job within UX, design or sonic media.<br><br> This portfolio is still under construction and the aim is to at least be able to show some of the projects I've done. Feel free to check them out below!
+        <h1 id="textofme">Hello there!</h1>
+        <p id="textofme"><br><br>I'm an engineer in Interactive Media Technology and I solve problems through user centered design. My biggest passions are <span style="font-weight: bold;">music, design, and UX/UI</span>, and I feel myself being at the right place when I get to be creative and analytic. I have further a specialisation within Sound and Music computing, which gives me additional competence combining sound and UX.<br><br>I'm currently looking for a job within UX, design or sonic media.<br><br> This portfolio is still under construction and the aim is to at least be able to show some of the projects I've done. Feel free to check them out below!
         </p>
 
         <nav id="skillsnav">
@@ -47,72 +50,53 @@
               <i class="arrow"></i>        
             </div>
           </a>
-        </nav> 
+        </nav>  
 
       </section>
-    </header>
-  </a>
+    </div>
+    
+  </header>
 
 <!-- ==================================== NAV ============================================= -->
-
-  <nav id="navbar">
-    <a href="#contacto">Contact</a>    
+  <!--<nav id="navbar">
+    <a href="#contactto">Contact</a>    
     <a href="#projecto">Projects</a>
     <a href="#hometo">About</a>
-  </nav>
-
+  </nav>-->
 <!-- ==================================== SKILLS ============================================= -->
-
-  <section class="panel" id="skillspart" data-color="blue">
-    <a name="skillsto">
-      <h2>More about me</h2>
-    </a>
-
-    <article>
-      <div id="keywords">
-        <h3>KEYWORDS</h3>
-        <p>Tech | Music/Sound | Interaction | Design | Sustainability | Development | UX/UI
-        </p>
+  <section id="skillspart"> 
+    <h2>More about me</h2>
+      <div id="skillsgrid">
+        <div id="keywords">
+          <h3>KEYWORDS</h3>
+            <p>Tech <span style="background-color: green; border-radius: 5px;">Music/Sound</span> Interaction <span style="background-color: green; border-radius: 5px;"> Design</span> Sustainability <span style="background-color: green; border-radius: 5px;"> Development</span> UX/UI
+            </p>
+        </div>
+        <div id="programming">
+          <h3>PROGRAMMING</h3>
+            <p>Python | Max/MSP | SuperCollider | HTML/CSS | JavaScript | SQL/XML</p>  
+        </div>
+        <div id="languages">        
+          <h3>LANGUAGES</h3>
+            <p>Swedish | Finnish | English</p>   
+        </div>
+        <div id="designskills">
+          <h3>DESIGN SKILLS</h3>
+            <p>Figma | Adobe XD | Marvel | Gimp | Photoshop/Illustrator <em>(a little)</em><br></p>
+        </div>         
+        <div id="audiospec">
+          <h3>AUDIO SPECIALITIES</h3>
+            <p style="margin-left: -25%;">Audio engineering | Music Informatics | Signal Processing | Interactive Sound<br></p>      
+        </div>           
       </div>
-    </article>
 
-    <article>
-      <div id="programming">
-        <h3>PROGRAMMING</h3>
-        <p>Python | Max/MSP | SuperCollider | HTML/CSS | JavaScript | SQL/XML</p>  
-      </div>
-    </article>  
-
-    <article>
-      <div id="languages">       
-        <h3>LANGUAGES</h3>
-        <p>Swedish | Finnish | English</p>  
-      </div> 
-    </article>
-
-    <article>
-      <div id="designskills">
-        <h3>DESIGN SKILLS</h3>
-        <p>Figma | Adobe XD | Marvel | Gimp | Photoshop/Illustrator <em>(a little)</em><br></p>
-      </div>
-    </article>    
-
-    <article>
-      <div id="audiospec">
-        <h3>AUDIO SPECIALITIES</h3>
-        <p>Audio engineering | Music Informatics | Signal Processing | Interactive Sound<br></p>
-      </div>
-    </article>  
-    
   </section>
-
+    
 <!-- ==================================== PROJECTS ============================================= -->
-  <section id="projectpart" class="panel" data-color="red">
-    <a name="projecto">
-      <h2>Projects</h2>
-    </a>
+  <section id="projectpart">
+    <h2>Projects</h2>
 
-      <div class="row">
+      <div class="row" id="projectgrid">
 
         <!-- .......... EXET .......... -->
           <div class="col-sm-4 project">
@@ -120,11 +104,11 @@
               <img src="pics/exet.jpeg" alt="Exjobb" class="image"> 
               <h3>Interactive<br>Dance</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Interactive Dance</span><br><span style="font-size: 8pt">Sensor technology, UX, Max/MSP<br>Spring 2020</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                <!-- <div class="texttitle">Interactive Dance</div>-->
                 <span class="textdesc">Sensor technology, UX, Max/MSP</span>
                 <span class="textcourse">Master Thesis - Spring 2020</span>
@@ -163,11 +147,11 @@
               <img src="pics/christmas1.png" alt="hristmashero" class="image">
               <h3>Christmas Hero</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Christmas Hero</span><br><span style="font-size: 8pt">Computer game, world design, UX, Unity<br>Autumn 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <!--<div class="texttitle">Christmas Hero</div>-->
                 <span class="textdesc">Computer game, world design, UX, Unity</span>
                 <span class="textcourse">Computer Game Design - Autumn 2019</span>
@@ -203,11 +187,11 @@
               <img src="pics/bassalg.png" alt="Improvisational" class="image">
               <h3>Improvisational algorithm</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Improvisational algorithm</span><br><span style="font-size: 8pt">HCI, Max/MSP<br>Autumn 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">HCI, Max/MSP</span>
                 <span class="textcourse">Advanced Project Course - Autumn 2019</span>
               </button>
@@ -242,11 +226,11 @@
               <img src="pics/musicinfo.png" alt="Chorddetector" class="image">
               <h3>Chord detector</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Chord detector</span><br><span style="font-size: 8pt">Machine learning, NumPy<br>Autumn 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">Machine learning, NumPy</span>
                 <span class="textcourse">Music Informatics - Autumn 2019</span>
               </button>
@@ -297,11 +281,11 @@
               <img src="pics/quizify.png" alt="Quizify" class="image">
               <h3>Quizify</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Quizify</span><br><span style="font-size: 8pt">Web game, UX, JavaScript/HTML/CSS<br>Spring 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">Web game, UX, JavaScript/HTML/CSS</span>
                 <span class="textcourse">Interaction programing for the dynamic web - Spring 2019</span>
               </button>
@@ -331,11 +315,11 @@
               <img src="pics/konsolofon.JPG" alt="Konsolofon" class="image">  
               <h3>Konsolofon</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Konsolofon</span><br><span style="font-size: 8pt">Acoustics, physical instrument<br>Spring 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">Acoustics, physical instrument</span>
                 <span class="textcourse">Music Acoustic - Spring 2019</span>
               </button>
@@ -396,11 +380,11 @@
               <img src="pics/darkexp.jpg" alt="Darkexp" class="image">
               <h3>Dark<br>Exploration</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Dark Exploration</span><br><span style="font-size: 8pt">HCI, Motion Capture, SuperCollider<br>Spring 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">         
+              <button class="myBtn">         
                 <span class="textdesc">HCI, Motion Capture, SuperCollider</span>
                 <span class="textcourse">Sound in Interaction - Spring 2019</span>
               </button>
@@ -432,11 +416,11 @@
               <img src="pics/leap.png" alt="Cattheremin" class="image">
               <h3>The Cat<br>Theremin</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">The Cat Theremin</span><br><span style="font-size: 8pt">HCI, SuperCollider, Leap Motion<br>Spring 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">HCI, SuperCollider, Leap Motion</span>
                 <span class="textcourse">Music Programming - Spring 2019</span>
               </button>
@@ -468,12 +452,12 @@
               <img src="pics/kex_1.png" alt="Cattheremin" class="image">
               <h3>Klimatsmart</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Klimatsmart</span><br><span style="font-size: 8pt">App, UX, prototyping, sustainability, Marvel
                     <br>Spring 2019</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">App, UX, prototyping, sustainability, Marvel</span>
                 <span class="textcourse">Bachelor thesis - Spring 2019</span>
               </button>
@@ -531,11 +515,11 @@
               <img src="pics/mixar1.png" alt="Mixar" class="image">   
               <h3>MixAR</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">MixAR</span><br><span style="font-size: 8pt">App, HCI, Unity<br>Autumn 2018</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">App, HCI, Unity</span>
                 <span class="textcourse">Multimodal Interaction and Interfaces - Autumn 2018</span>
               </button>
@@ -566,11 +550,11 @@
               <img src="pics/remark.png" alt="Remark" class="image">   
               <h3>Remark</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Remark</span><br><span style="font-size: 8pt">App, prototyping, UX<br>Autumn 2018</span>
                 </button>
               </div>
-              <button class="myBtn_mob">
+              <button class="myBtn">
                 <span class="textdesc">App, prototyping, UX</span>
                 <span class="textcourse">Media Technology and Interaction Design - Autumn 2018</span>
               </button>
@@ -625,11 +609,11 @@
               <img src="pics/piano.jpg" alt="Compostiotion" class="image">
               <h3>Compositions</h3>
               <div class="textcoursesmall">
-                <button class=myBtn_web>
+                <button class=myBtn1>
                   <span style="font-size: 14pt">Compositions</span><br><span style="font-size: 8pt">Side projects</span>
                 </button>
               </div>
-              <button class="myBtn_mob">        
+              <button class="myBtn">        
                 <span class="textdesc">Side projects</span>
                 <span class="textcourse"></span>
               </button>
@@ -646,88 +630,55 @@
                       <iframe style="margin-top: 40px" src="https://player.vimeo.com/video/413636650" width="540" height="260" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                     <div class="col-sm-6">
-                      <p>
-                        <h4 style="font-size: 14pt;margin-top: -40px;">RGB/SW</h4>In the reception at Media Technology at KTH, a film project is always produced. In 2016, the traditional film project called RGB/SW was made, that is a story about the super heroes Röd, Grön, Blå, Swart, and Wit. I was the leader of the music composition team, and also composed many tracks for the film series. This video is the title intro to the series and was composed by me and mastered together with Johan Wetterin. The composition was made in MuseScore. <br> <br> Something that was challenging was that the music had to be composed and produced before seeing any film material. I only knew the story and the script to base the music on.
-                      </p>
+                        <p>
+                          <h4 style="font-size: 14pt;margin-top: -40px;">RGB/SW</h4>In the reception at Media Technology at KTH, a film project is always produced. In 2016, the traditional film project called RGB/SW was made, that is a story about the super heroes Röd, Grön, Blå, Swart, and Wit. I was the leader of the music composition team, and also composed many tracks for the film series. This video is the title intro to the series and was composed by me and mastered together with Johan Wetterin. The composition was made in MuseScore. <br> <br> Something that was challenging was that the music had to be composed and produced before seeing any film material. I only knew the story and the script to base the music on.
+                        </p>
                     </div>  
                     <div class="col-sm-6">
                       <iframe style="margin-top: 20px" width="540" height="260" src="https://www.youtube.com/embed/enaZ5fKLXdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div> 
                     <div class="col-sm-6">
-                      <p>
-                        <h4 style="font-size: 14pt;margin-top:-70px;">Christmas Hero</h4>In a Computer game course taken in 2019, a Christmas themed game was developed by me and a team of four others. In the game, the spirit of Christmas had disappeared but was progressively coming back when Christmas gifts were delivered to the right character. The music was therefore progressively becoming more Christmassy in terms of Christmas related instruments and melody. In level 1, only wind sound was heard. In level 2, I wanted to make a simple and quite careful melody that felt hopeful and happy but not too Christmassy. As I wanted a feeling of continuity between the levels, the beginning of the music in level 3 has the same melody as in level 2, but is then continuing in melody. In the final part, I wanted to create a happy and as Christmassy feeling as possible. As the user has reached the end of the game by then, it is relatively short and is not repeating. <br><br>The composition was made in MuseScore by me. What was challenging was that it was hard knowing how long a level will take to play, as the composition was made while the game was developed. That made it hard to know how long a piece should be and how many musical features to be made. I made the level pieces therefore quite short that could be repeated. 
-                      </p>
+                        <p>
+                          <h4 style="font-size: 14pt;margin-top:-70px;">Christmas Hero</h4>In a Computer game course taken in 2019, a Christmas themed game was developed by me and a team of four others. In the game, the spirit of Christmas had disappeared but was progressively coming back when Christmas gifts were delivered to the right character. The music was therefore progressively becoming more Christmassy in terms of Christmas related instruments and melody. In level 1, only wind sound was heard. In level 2, I wanted to make a simple and quite careful melody that felt hopeful and happy but not too Christmassy. As I wanted a feeling of continuity between the levels, the beginning of the music in level 3 has the same melody as in level 2, but is then continuing in melody. In the final part, I wanted to create a happy and as Christmassy feeling as possible. As the user has reached the end of the game by then, it is relatively short and is not repeating. <br><br>The composition was made in MuseScore by me. What was challenging was that it was hard knowing how long a level will take to play, as the composition was made while the game was developed. That made it hard to know how long a piece should be and how many musical features to be made. I made the level pieces therefore quite short that could be repeated. 
+                        </p>
                     </div>                      
                   </div>          
               </div>
             </div>  
           </a>  <!-- End of href for compositions -->     
         </div>
-    
+
+    </div>
   </section>
 
-
-
-
 <!-- ==================================== FOOTER ============================================= -->
-  <a name="contacto">
 
-    <footer>
-      <p>Don't hesitate to contact me! Even if it's just over a fika :)</p>
-        <div class="row">
-          <div class="col-sm-12" id="contacticons">
-            <a id="linkedin" href="https://www.linkedin.com/in/thelmasvenns/" target="_blank"><img src="pics/linkedin.png" alt="LinkedIn" style="height: 22px;"></a>
-            <a id="mail" href="mailto:thelmasv@gmail.com" target="_blank"><img src="pics/mail.png" alt ="Email" style="height: 22px;"></a>
-            <a id="git" href="https://github.com/thelmasv" target="_blank"><img src="pics/github.png" alt="GitHub" style="height: 22px;"></a>      
-          </div>   
-        </div>
-        <p id="rights">All rights reserved Thelma Svenns | 2021</p>  
-      
-    </footer>
-  </a>
+<footer>
+  <p>Don't hesitate to contact me! Even if it's just over a fika :)</p>
+    <div class="row">
+      <div class="col-sm-12" id="contacticons">
+        <a id="linkedin" href="https://www.linkedin.com/in/thelmasvenns/" target="_blank"><img src="pics/linkedin.png" alt="LinkedIn" style="height: 22px;"></a>
+        <a id="mail" href="mailto:thelmasv@gmail.com" target="_blank"><img src="pics/mail.png" alt ="Email" style="height: 22px;"></a>
+        <a id="git" href="https://github.com/thelmasv" target="_blank"><img src="pics/github.png" alt="GitHub" style="height: 22px;"></a>      
+      </div>   
+    </div>
+    <p id="rights">All rights reserved Thelma Svenns | 2021</p>  
+  
+</footer>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
 
 </body>
 
-<script>
-$(window).scroll(function() {
-  
-  // selectors
-  var $window = $(window),
-      $body = $('body'),
-      $panel = $('.panel');
-  
-  // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 5);
- 
-  $panel.each(function () {
-    var $this = $(this);
-    
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-          
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
-       
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
-    }
-  });    
-  
-}).scroll();
-</script>
 
 <!-- ========== FOR COMPUTER MODAL ========== -->
 <script>
   // Get the modal
   var modals = document.getElementsByClassName("modal");
   // Get the button that opens the modal
-  var btns = document.getElementsByClassName("myBtn_mob");
+  var btns = document.getElementsByClassName("myBtn");
   // Get the <span> element that closes the modal
   var spans = document.getElementsByClassName("close");
 /*
@@ -761,7 +712,7 @@ $(window).scroll(function() {
   // Get the modal
   var modals = document.getElementsByClassName("modal");
   // Get the button that opens the modal
-  var btns = document.getElementsByClassName("myBtn_web");
+  var btns = document.getElementsByClassName("myBtn1");
   // Get the <span> element that closes the modal
   var spans = document.getElementsByClassName("close");
   for(let i=0;i<btns.length;i++){
@@ -836,14 +787,8 @@ $(window).scroll(function() {
 })();
 </script>
 
-<script>
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-50px";
-    }
-  }
-  
-</script>
+
+
+
+
+
