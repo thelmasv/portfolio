@@ -235,6 +235,9 @@ nav span {
 
 #projectpart {
 	margin-top: 10vw;
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
 }
 
 .container {
@@ -245,7 +248,6 @@ nav span {
 .image {
   opacity: 1;
   display: block;
-  width: 80%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -397,12 +399,6 @@ button {
   }
 }
 
-@media screen and (min-width: 600px) {
-  div.textcoursesmall {
-    display: none;
-
-  }
-}
 
 @media only screen and (max-width: 600px) {
 	iframe {

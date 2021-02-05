@@ -10,6 +10,7 @@ html,body {
   	scroll-behavior: smooth;	
 	/*background-color: #f3f3f3;*/
   	transition: background-color 1s ease;
+
 }
 
 .panel {
@@ -26,19 +27,15 @@ html,body {
   background-color: #355961;
 }
 
-.color-orange {
+.color-red {
 	background-color: rgb(239,164,96);
-}
-
-h1{
-	font-size: 16pt;
 }
 
 h2 {
 	text-align: center;
 	font-size: 30pt;
 	letter-spacing: 0.3em;	
-	/*padding-top: 3vw;*/
+	padding-top: 10vw;
 	color: white;
 	margin-bottom: 3vw;
 }
@@ -53,190 +50,6 @@ h3 {
 
 }
 
-/* ==================================== HOME ============================================= */
-
-header {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
-	padding-bottom: 10vw;
-}
-
-#colorblock {
-	background: rgb(239,164,96);
-	padding-bottom: 4em;
-	display: grid;
-	grid-template-columns: 52vw 1fr;
-	max-height: 100px;
-
-}
-
-.picofme {
-	position: relative;
-	width: 40vw;
-	height: 40vw;
-	margin-left: 5vw;
-	margin-top: 4em;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
-}
-
-#homeabout {
-	margin-left: 5%;
-	margin-right: 5%;
-	padding-top: 42%;
-	padding-bottom: 3%;
-   
-}
-
-@media only screen and (max-width: 1290px) {
-	#homeabout{
-		padding-top: 0px;
-	}
-}
-
-.logo{
-	position: relative;
-	max-width: 40vw;
-	max-height: 25vw;
-	margin-top: 10%;
-}
-
-.textofme {
-	padding-right: 4vw;
-
-}
-
-nav span {
-	text-decoration: none;
-	color: black;
-}
-
-#skillsnav a:hover {
-	font-size: 14pt;
-}
-
-#projectsnav a:hover{
-	font-size: 14pt;
-}
-
-#skillsnav {
-	height: auto;
-	text-align: center;	
-	font-size: 12pt;
-	font-weight: bold;
-}
-
-#projectsnav {
-	height: auto;
-	text-align: center;	
-	font-size: 12pt;
-	font-weight: bold;
-}
-
-.arrow{
-	border: solid black;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);	
-	transition: width 2s;
-}
-
-.arrow:hover{
-	top: 5%;
-}
-
-/* ==================================== NAV ============================================= */
-
-#navbar {
-  position: fixed; /* Make it stick/fixed */
-  top: -100px; /* Hide the navbar 50 px outside of the top view */
-  width: 99.99%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  z-index: 5;
-}
-/* Style the navbar links */
-#navbar a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 14pt;
-  background-color: rgba(243,243,243,0.8);
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-@media only screen and (max-width: 600px) {
-	#navbar {
-		padding-top: 2px;
-	}
-}
-
-/* ==================================== SKILLS ============================================= */
-
-#skillspart {
-	padding-bottom: 10vw;
-}
-
-#skillspart p {
-	color: white;
-	font-size: calc(10px + 6 * ((100vw - 320px) / 680));
-	padding-right: 3%;
-	padding-left: 3%;
-	text-align: center;
-	background-color: black;
-	padding: 8px;
-	width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-	#skillspart h3 {
-		width: 100%;
-
-	}
-}
-
-
-#keywords{
-	float: left;
-	padding-right: 5%;
-}
-
-#programming {
-	float: right;
-	padding-left: 1%;
-}
-#programming p {
-	float: right;
-
-}
-
-#languages {
-	float: left;
-	padding-right: 5%;
-}
-
-#designskills {
-	float: right;
-}
-
-#designskills p {
-	float: right;
- 
-}
-
-#audiospec{
-	float: left;
-
-}
-
-/* ==================================== PROJECTS ============================================= */
 h4 {
 	font-size: 30pt;
 }
@@ -244,8 +57,7 @@ h4 {
 #projectpart {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-	grid-column-gap: 130px;
-	grid-row-gap: 30px;
+	grid-gap: 130px;
 	max-width: 90%;
   	margin: 0 auto 30px;
 }
@@ -262,7 +74,7 @@ h4 {
 	left: 30px;*/
 	top: -20rem;
 	margin-left: -5%;
-	padding: 3px 10px 3px 10px;
+	padding: 3px 0px 3px 10px;
 	background-color: #355961;
 	color: white;
 	opacity: 85%;
@@ -631,59 +443,3 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
-
-
-/* ==================================== FOOTER ============================================= */
-
-footer {
-	width: auto;
-	background-color: #f3f3f3; 
-	/*position: all;*/
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: auto;
-	margin-top: 5%;
-}
-
-#rights {
-	font-size: 9pt;
-	color: black;
-	text-align: center;
-	margin-top: 100px;	
-	padding-bottom: 15px;
-
-}
-
-footer p {
-	font-size: 14pt;
-	color: black;
-	text-align: center;
-	padding-top: 5px;
-
-}
-
-#contacticons {
-	display: flex;
-	justify-content: center;
-}
-
-
-#mail {
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-
-@media only screen and (max-width: 600px) {
-	#linkedin a {
-		margin-left: 50%;
-
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#mail a {
-		margin-left: 50%;
-
-	}
-}

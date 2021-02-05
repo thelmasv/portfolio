@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/docs/3.4/dist/css/bootstrap.min.css"> 
   <link rel="icon" href="namnicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="style_test.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
@@ -16,103 +16,11 @@
 
 <body>
 
-<!-- ==================================== HOME ============================================= -->
-
-  <a name="hometo">
-
-    <header>
-      <section id="colorblock" class="panel" data-color="lightgrey">
-        <img src="pics/moisv.jpg" alt="thelma" class="picofme">
-        <img src="pics/ts.png" alt="logothelmasvenns" class="logo">
-      </section>
-      
-
-      <section id="homeabout">
-        <h1 class="textofme">Hello there!</h1>
-        <p class="textofme">I'm an engineer in Interactive Media Technology and I solve problems through user centered design. My biggest passions are <span style="font-weight: bold;">music, design, and UX/UI</span>, and I feel myself being at the right place when I get to be creative and analytic. I have further a specialisation within Sound and Music computing, which gives me additional competence combining sound and UX.<br><br>I'm currently looking for a job within UX, design or sonic media.<br><br> This portfolio is still under construction and the aim is to at least be able to show some of the projects I've done. Feel free to check them out below!
-        </p>
-
-        <nav id="skillsnav">
-          <a href= "#skillsto" style="text-decoration: none;">
-            <span>More about me</span><br>
-            <i class="arrow"></i>   
-          </a>
-        </nav>
-
-        <nav id="projectsnav">
-          <a href= "#projecto" style="text-decoration: none;">
-            <span>Projects</span><br>
-            <i class="arrow"></i>
-            <div style="margin-top: -15px;">
-              <i class="arrow"></i>        
-            </div>
-          </a>
-        </nav> 
-
-      </section>
-    </header>
-  </a>
-
-<!-- ==================================== NAV ============================================= -->
-
-  <nav id="navbar">
-    <a href="#contacto">Contact</a>    
-    <a href="#projecto">Projects</a>
-    <a href="#hometo">Home</a>
-  </nav>
-
-<!-- ==================================== SKILLS ============================================= -->
-
-  <section class="panel" id="skillspart" data-color="blue">
-    <a name="skillsto">
-      <h2>More about me</h2>
-    </a>
-
-    <article>
-      <div id="keywords">
-        <h3>WHAT I'M INTO</h3>
-        <p>Tech | Music/Sound | Interaction | Design | Sustainability | Development | UX/UI
-        </p>
-      </div>
-    </article>
-
-    <article>
-      <div id="programming">
-        <h3>PROGRAMMING</h3>
-        <p>Python | Max/MSP | SuperCollider | HTML/CSS | JavaScript | SQL/XML</p>  
-      </div>
-    </article>  
-
-    <article>
-      <div id="languages">       
-        <h3>LANGUAGES</h3>
-        <p>Swedish | Finnish | English</p>  
-      </div> 
-    </article>
-
-    <article>
-      <div id="designskills">
-        <h3>DESIGN SKILLS</h3>
-        <p>Figma | Adobe XD | Marvel | Gimp | Photoshop/Illustrator <em>(a little)</em><br></p>
-      </div>
-    </article>    
-
-    <article>
-      <div id="audiospec">
-        <h3>AUDIO SPECIALITIES</h3>
-        <p>Audio engineering | Music Informatics | Signal Processing | Interactive Sound<br></p>
-      </div>
-    </article>  
-    
-  </section>
-
-<!-- ==================================== PROJECTS ============================================= -->
-
   <a name="projecto">
-    <h2 style="color: black; margin-top: 15vw;">Projects</h2>
+    <h2>Projects</h2>
   </a>
 
-  <section id="projectpart" class="panel" data-color="orange">
+  <section id="projectpart" class="panel" data-color="red">
 
 
 <!-- .......... MASTER THESES .......... -->
@@ -196,13 +104,13 @@
         </div>
       </div> 
 
-    </article>   
+    </article>    
 
 <!-- .......... IMPRO .......... -->
 
     <article class="project">
       <img src="pics/bassalg.png" class="image">
-      <h3 style="padding-right: 20vw;">Improvisational algorithm</h3>
+      <h3>Improvisational<br>algorithm</h3>
 
       <button class="myBtn_web">
         <span class="textdesc">HCI, Max/MSP</span>
@@ -654,32 +562,19 @@
       </a>  <!-- End of href for compositions --> 
 
     </article>  
-    
+
+
+
+
+
   </section>
 
 
 
 
-<!-- ==================================== FOOTER ============================================= -->
-  <a name="contacto">
-
-    <footer>
-      <p>Don't hesitate to contact me! Even if it's just over a fika :)</p>
-        <div class="row">
-          <div class="col-sm-12" id="contacticons">
-            <a id="linkedin" href="https://www.linkedin.com/in/thelmasvenns/" target="_blank"><img src="pics/linkedin.png" alt="LinkedIn" style="height: 22px;"></a>
-            <a id="mail" href="mailto:thelmasv@gmail.com" target="_blank"><img src="pics/mail.png" alt ="Email" style="height: 22px;"></a>
-            <a id="git" href="https://github.com/thelmasv" target="_blank"><img src="pics/github.png" alt="GitHub" style="height: 22px;"></a>      
-          </div>   
-        </div>
-        <p id="rights">All rights reserved Thelma Svenns | 2021</p>  
-      
-    </footer>
-  </a>
-
-
 
 </body>
+
 
 <script>
 $(window).scroll(function() {
