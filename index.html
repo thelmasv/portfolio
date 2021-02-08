@@ -20,8 +20,8 @@
 
   <a name="hometo">
 
-    <header>
-      <section id="colorblock" class="panel" data-color="lightgrey">
+    <header class="header">
+      <section class="colorblock" class="panel" data-color="red">
         <img src="pics/moisv.jpg" alt="thelma" class="picofme">
         <img src="pics/ts.png" alt="logothelmasvenns" class="logo">
       </section>
@@ -63,7 +63,7 @@
 
 <!-- ==================================== SKILLS ============================================= -->
 
-  <section class="panel" id="skillspart" data-color="blue">
+  <section class="panel" id="skillspart" data-color="red">
     <a name="skillsto">
       <h2>More about me</h2>
     </a>
@@ -112,7 +112,7 @@
     <h2 style="color: black; margin-top: 15vw;">Projects</h2>
   </a>
 
-  <section id="projectpart" class="panel" data-color="orange">
+  <section id="projectpart" class="panel" data-color="red">
 
 
 <!-- .......... MASTER THESES .......... -->
@@ -537,7 +537,7 @@
           <span class="close">&times;</span>
             <div class="row videoandtitle">
               <div class="col-sm-6">
-                <h3>MixAR</h3>
+                <h4>MixAR</h4>
                 <iframe class="coursevideo" src="https://player.vimeo.com/video/310171776" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
               </div> 
               <div class="col-sm-6">
@@ -637,7 +637,7 @@
                 </div> 
                 <div class="col-sm-6">
                   <p>
-                    <h4 style="font-size: 14pt;margin-top: -40px;">RGB/SW</h4>In the reception at Media Technology at KTH, a film project is always produced. In 2016, the traditional film project called RGB/SW was made, that is a story about the super heroes Röd, Grön, Blå, Swart, and Wit. I was the leader of the music composition team, and also composed many tracks for the film series. This video is the title intro to the series and was composed by me and mastered together with Johan Wetterin. The composition was made in MuseScore. <br> <br> Something that was challenging was that the music had to be composed and produced before seeing any film material. I only knew the story and the script to base the music on.
+                    <span style="font-size: 14pt;margin-top: -40px;">RGB/SW</span><br>In the reception at Media Technology at KTH, a film project is always produced. In 2016, the traditional film project called RGB/SW was made, that is a story about the super heroes Röd, Grön, Blå, Swart, and Wit. I was the leader of the music composition team, and also composed many tracks for the film series. This video is the title intro to the series and was composed by me and mastered together with Johan Wetterin. The composition was made in MuseScore. <br> <br> Something that was challenging was that the music had to be composed and produced before seeing any film material. I only knew the story and the script to base the music on.
                   </p>
                 </div>  
                 <div class="col-sm-6">
@@ -645,7 +645,7 @@
                 </div> 
                 <div class="col-sm-6">
                   <p>
-                    <h4 style="font-size: 14pt;margin-top:-70px;">Christmas Hero</h4>In a Computer game course taken in 2019, a Christmas themed game was developed by me and a team of four others. In the game, the spirit of Christmas had disappeared but was progressively coming back when Christmas gifts were delivered to the right character. The music was therefore progressively becoming more Christmassy in terms of Christmas related instruments and melody. In level 1, only wind sound was heard. In level 2, I wanted to make a simple and quite careful melody that felt hopeful and happy but not too Christmassy. As I wanted a feeling of continuity between the levels, the beginning of the music in level 3 has the same melody as in level 2, but is then continuing in melody. In the final part, I wanted to create a happy and as Christmassy feeling as possible. As the user has reached the end of the game by then, it is relatively short and is not repeating. <br><br>The composition was made in MuseScore by me. What was challenging was that it was hard knowing how long a level will take to play, as the composition was made while the game was developed. That made it hard to know how long a piece should be and how many musical features to be made. I made the level pieces therefore quite short that could be repeated. 
+                    <span style="font-size: 14pt;margin-top:-70px;">Christmas Hero</span><br>In a Computer game course taken in 2019, a Christmas themed game was developed by me and a team of four others. In the game, the spirit of Christmas had disappeared but was progressively coming back when Christmas gifts were delivered to the right character. The music was therefore progressively becoming more Christmassy in terms of Christmas related instruments and melody. In level 1, only wind sound was heard. In level 2, I wanted to make a simple and quite careful melody that felt hopeful and happy but not too Christmassy. As I wanted a feeling of continuity between the levels, the beginning of the music in level 3 has the same melody as in level 2, but is then continuing in melody. In the final part, I wanted to create a happy and as Christmassy feeling as possible. As the user has reached the end of the game by then, it is relatively short and is not repeating. <br><br>The composition was made in MuseScore by me. What was challenging was that it was hard knowing how long a level will take to play, as the composition was made while the game was developed. That made it hard to know how long a piece should be and how many musical features to be made. I made the level pieces therefore quite short that could be repeated. 
                   </p>
                 </div>                      
               </div>          
@@ -830,11 +830,19 @@ $(window).scroll(function() {
 <script>
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
       document.getElementById("navbar").style.top = "0";
     } else {
       document.getElementById("navbar").style.top = "-50px";
     }
   }
   
+</script>
+
+<script>
+  $(window).scroll(function(){
+    $(".header").css("opacity", 1 - $(window).scrollTop() / 550);
+  });
+  
+
 </script>

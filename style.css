@@ -9,6 +9,7 @@ html,body {
   	scroll-behavior: smooth;	
 	/*background-color: #f3f3f3;*/
   	transition: background-color 1s ease;
+  	background-color: #E4DACD;
 }
 
 .panel {
@@ -44,12 +45,12 @@ h2 {
 
 h3 {
 	font-weight: bold;
-	color: #EFA460;
+	color: black;
 	letter-spacing: 0.3em;
 	padding-left: 5px;
 	font-size: 5vw;
-	font-size: calc(20px + 32 * ((100vw - 320px) / 680))
-
+	font-size: calc(20px + 32 * ((100vw - 320px) / 680));
+	font-family: "Quicksand";
 }
 
 /* ==================================== HOME ============================================= */
@@ -57,15 +58,14 @@ h3 {
 header {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
-	padding-bottom: 10vw;
+	padding-bottom: 3vw;
 }
 
-#colorblock {
-	background: rgb(239,164,96);
+.colorblock {
+	background: transparent;
 	padding-bottom: 4em;
 	display: grid;
 	grid-template-columns: 52vw 1fr;
-	max-height: 100px;
 
 }
 
@@ -83,7 +83,9 @@ header {
 	margin-right: 5%;
 	padding-top: 42%;
 	padding-bottom: 3%;
-   
+	font-family: "Calibri";
+
+
 }
 
 @media only screen and (max-width: 1290px) {
@@ -91,6 +93,12 @@ header {
 		padding-top: 0px;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.textofme{
+	}
+}
+
 
 .logo{
 	position: relative;
@@ -150,7 +158,7 @@ nav span {
 #navbar {
   position: fixed; /* Make it stick/fixed */
   top: -100px; /* Hide the navbar 50 px outside of the top view */
-  width: 99.99%; /* Full width */
+  width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 5;
 }
@@ -180,7 +188,9 @@ nav span {
 /* ==================================== SKILLS ============================================= */
 
 #skillspart {
-	padding-bottom: 10vw;
+	padding-bottom: 3vw;
+	background-color: #A99893;
+	height: 100%;
 }
 
 #skillspart p {
@@ -189,7 +199,7 @@ nav span {
 	padding-right: 3%;
 	padding-left: 3%;
 	text-align: center;
-	background-color: black;
+	background-color: #2C2C2C;
 	padding: 8px;
 	width: 100%;
 }
@@ -345,7 +355,7 @@ button {
 }
 
 .myBtn_mob {
-	background-color: #355961;
+	background-color: #2C2C2C;
   	position: relative;
 	left: 30vw;
 	width: 100%;
@@ -443,6 +453,7 @@ button {
 	padding-left: 70px;
 	padding-top: 70px;
 	padding-right: 10px;
+	font-family: "Calibri";
 }
 
 @media only screen and (max-width: 600px) {
