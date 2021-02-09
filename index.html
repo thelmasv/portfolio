@@ -112,12 +112,21 @@
     <h2 style="color: black; margin-top: 15vw;">Projects</h2>
   </a>
 
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('All')"> All</button>
+    <button class="btn" onclick="filterSelection('UX')"> UX</button>
+    <button class="btn" onclick="filterSelection('Sonic')"> Sonic</button>
+    <button class="btn" onclick="filterSelection('HCI')"> HCI</button>    
+    <button class="btn" onclick="filterSelection('Web')"> Web</button>    
+    <button class="btn" onclick="filterSelection('Other')"> Other</button>
+  </div>  
+
   <section id="projectpart" class="panel" data-color="red">
+  
 
-
-
-<!-- .......... MASTER THESES .......... -->
-    <article class="project">
+<!-- .......... Djupvik .......... -->
+    <article class="project UX Web All">
       <img src="pics/djupvik.png" class="image" alt="Djupviks hamn">
       <h3>Djupviks<br>hamn</h3>
     
@@ -184,7 +193,7 @@
 
 
 <!-- .......... MASTER THESES .......... -->
-    <article class="project">
+    <article class="project UX HCI Sonic All">
       <img src="pics/exet.jpeg" class="image" alt="interactive dance">
       <h3>Interactive<br>Dance</h3>
     
@@ -228,7 +237,7 @@
 
 <!-- .......... CHRISTMAS .......... -->
 
-    <article class="project">
+    <article class="project UX All">
       <img src="pics/christmas1.png" class="image" alt="christmas hero">
       <h3>Christmas<br>Hero</h3>
 
@@ -268,7 +277,7 @@
 
 <!-- .......... IMPRO .......... -->
 
-    <article class="project">
+    <article class="project Sonic HCI All">
       <img src="pics/bassalg.png" class="image" alt="improvisational algorithm">
       <h3 style="padding-right: 20vw;">Improvisational algorithm</h3>
 
@@ -304,7 +313,7 @@
 
 <!-- .......... CHORD DETECTOR .......... -->
 
-    <article class="project">
+    <article class="project Sonic All">
       <img src="pics/musicinfo.png" class="image" alt="chord detector">
       <h3>Chord detector</h3>
     
@@ -356,7 +365,7 @@
 
 <!-- .......... QUIZIFY.......... -->
 
-    <article class="project">
+    <article class="project Web UX All">
       <img src="pics/quizify.png" class="image" alt="quizify">
       <h3>Quizify</h3>
 
@@ -392,7 +401,7 @@
 <!-- .......... KONSOLOFON .......... -->
     
 
-    <article class="project">
+    <article class="project Sonic All">
       <img src="pics/konsolofon.JPG" class="image" alt="konsolofon">
       <h3>Konsolofon</h3>
 
@@ -454,7 +463,7 @@
 
 <!-- .......... DARK EXPO .......... -->
 
-    <article class="project">
+    <article class="project Sonic HCI All">
       <img src="pics/darkexp.jpg" class="image" alt="dark exploration">
       <h3>Dark<br>Exploration</h3>
 
@@ -489,7 +498,7 @@
 
 <!-- .......... CAT THEREMIN .......... -->
 
-    <article class="project">
+    <article class="project Sonic HCI All">
       <img src="pics/leap.png" class="image" alt="the cat theremin">
       <h3>The Cat<br>Theremin</h3>
 
@@ -526,7 +535,7 @@
 
 <!-- .......... KLIMATSMART .......... -->
 
-    <article class="project">
+    <article class="project UX All">
       <img src="pics/kex_1.png" class="image" alt="klimatsmart">
       <h3>Klimatsmart</h3>
 
@@ -586,7 +595,7 @@
 
 <!-- .......... MIXAR .......... -->
 
-    <article class="project">
+    <article class="project HCI All">
       <img src="pics/mixar1.png" class="image" alt="mixar">
       <h3>MixAR</h3>
 
@@ -622,7 +631,7 @@
 
 <!-- .......... REMARK .......... -->
 
-    <article class="project">
+    <article class="project UX All">
       <img src="pics/remark.png" class="image" alt="remark">
       <h3>Remark</h3>
 
@@ -682,7 +691,7 @@
 <!-- .......... COMPOSITIONS .......... -->
 
 
-    <article class="project">
+    <article class="project Other All">
       <img src="pics/piano.jpg" class="image" alt="compositions">
       <h3>Compositions</h3>
 
@@ -749,168 +758,17 @@
 
 </body>
 
-<script>
-$(window).scroll(function() {
-  
-  // selectors
-  var $window = $(window),
-      $body = $('body'),
-      $panel = $('.panel');
-  
-  // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 5);
- 
-  $panel.each(function () {
-    var $this = $(this);
-    
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-          
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
-       
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
-    }
-  });    
-  
-}).scroll();
-</script>
+<script src="panel.js"></script>
 
 <!-- ========== FOR COMPUTER MODAL ========== -->
-<script>
-  // Get the modal
-  var modals = document.getElementsByClassName("modal");
-  // Get the button that opens the modal
-  var btns = document.getElementsByClassName("myBtn_mob");
-  // Get the <span> element that closes the modal
-  var spans = document.getElementsByClassName("close");
-/*
-  // When the user clicks on <span> (x), close the modal
-  spans.onclick = function() {
-    modal.style.display = "none";
-  }*/
-  // When the user clicks anywhere outside of the modal, close it
-  /*window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }*/
-  for(let i=0;i<btns.length;i++){
-     btns[i].onclick = function() {
-        modals[i].style.display = "block";
-     }
-  }
-  for(let i=0;i<spans.length;i++){
-      spans[i].onclick = function() {
-         modals[i].style.display = "none";
-      }
-   }
-</script>
+<script src="js/computermodal.js"></script>
 <!-- ========== FOR MOBILE MODAL ========== -->
-<script>
-  // When the user clicks on the button, open the modal
-  //btn.onclick = function() {
-    //modal.style.display = "block";
-  //}
-  // Get the modal
-  var modals = document.getElementsByClassName("modal");
-  // Get the button that opens the modal
-  var btns = document.getElementsByClassName("myBtn_web");
-  // Get the <span> element that closes the modal
-  var spans = document.getElementsByClassName("close");
-  for(let i=0;i<btns.length;i++){
-     btns[i].onclick = function() {
-        modals[i].style.display = "block";
-     }
-  }
-  for(let i=0;i<spans.length;i++){
-      spans[i].onclick = function() {
-         modals[i].style.display = "none";
-      }
-   }
-</script>
-<script>
-(function() {
-  init(); //on page load - show first slide, hidethe rest
-  function init() {
-    parents = document.getElementsByClassName('slideshow-container');
-    for (j = 0; j < parents.length; j++) {
-      var slides = parents[j].getElementsByClassName("mySlides");
-      var dots = parents[j].getElementsByClassName("dot");
-      slides[0].classList.add('active-slide');
-      dots[0].classList.add('active');
-    }
-  }
-  dots = document.getElementsByClassName('dot'); //dots functionality
-  for (i = 0; i < dots.length; i++) {
-    dots[i].onclick = function() {
-      slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
-      for (j = 0; j < this.parentNode.children.length; j++) {
-        this.parentNode.children[j].classList.remove('active');
-        slides[j].classList.remove('active-slide');
-        if (this.parentNode.children[j] == this) {
-          index = j;
-        }
-      }
-      this.classList.add('active');
-      slides[index].classList.add('active-slide');
-    }
-  }
-//prev/next functionality
-  links = document.querySelectorAll('.slideshow-container a');
-  for (i = 0; i < links.length; i++) {
-    links[i].onclick = function() {
-      current = this.parentNode;
-      var slides = current.getElementsByClassName("mySlides");
-      var dots = current.getElementsByClassName("dot");
-      curr_slide = current.getElementsByClassName('active-slide')[0];
-      curr_dot = current.getElementsByClassName('active')[0];
-      curr_slide.classList.remove('active-slide');
-      curr_dot.classList.remove('active');
-      if (this.className == 'next') {
-        if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
-          curr_slide.nextElementSibling.classList.add('active-slide');
-          curr_dot.nextElementSibling.classList.add('active');
-        } else {
-          slides[0].classList.add('active-slide');
-          dots[0].classList.add('active');
-        }
-      }
-      if (this.className == 'prev') {
-        if (curr_slide.previousElementSibling) {
-          curr_slide.previousElementSibling.classList.add('active-slide');
-          curr_dot.previousElementSibling.classList.add('active');
-        } else {
-          slides[slides.length - 1].classList.add('active-slide');
-          dots[slides.length - 1].classList.add('active');
-        }
-      }
-    }
-  }
-})();
-</script>
+<script src="js/mobilemodal.js"></script>
 
-<script>
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-50px";
-    }
-  }
-  
-</script>
+<script src="js/slideshow.js"></script>
 
-<script>
-  $(window).scroll(function(){
-    $(".header").css("opacity", 1 - $(window).scrollTop() / 550);
-  });
-  
+<script src="js/navbarscroll.js"></script>
 
-</script>
+<script src="js/scroll.js"></script>
+
+<script src="js/button.js"></script>

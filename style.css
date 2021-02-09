@@ -12,6 +12,11 @@ html,body {
   	background-color: #E4DACD;
 }
 
+html {
+  	overflow-x: hidden !important;
+
+}
+
 .panel {
   /* min height incase content is higher than window height */
 	  min-height: 60vw;
@@ -158,13 +163,14 @@ nav span {
 #navbar {
   position: fixed; /* Make it stick/fixed */
   top: -100px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
+  width: 99.98%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 5;
 }
 /* Style the navbar links */
 #navbar a {
   float: right;
+  margin-right: 2px;
   display: block;
   color: black;
   text-align: center;
@@ -188,7 +194,6 @@ nav span {
 /* ==================================== SKILLS ============================================= */
 
 #skillspart {
-	padding-bottom: 3vw;
 	background-color: #A99893;
 	height: 100%;
 }
@@ -245,6 +250,8 @@ nav span {
 
 }
 
+
+
 /* ==================================== PROJECTS ============================================= */
 h4 {
 	font-size: 30pt;
@@ -259,11 +266,48 @@ h4 {
   	margin: 0 auto 30px;
 }
 
+/* Style the buttons */
+
+#myBtnContainer {
+	text-align: center;
+	padding-bottom: 3vw;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #f3f3f3;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #2C2C2C;
+   color: white;
+}
+
 .image {
 	height: auto;
 	width: 100%;
 	object-fit: cover;	
 }
+
+.project {
+	display: none;
+}
+
+.show {
+	display: block;
+
+}
+
 
 .project h3{
  	position: relative;
