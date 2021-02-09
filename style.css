@@ -170,7 +170,6 @@ nav span {
 /* Style the navbar links */
 #navbar a {
   float: right;
-  margin-right: 2px;
   display: block;
   color: black;
   text-align: center;
@@ -271,6 +270,13 @@ h4 {
 #myBtnContainer {
 	text-align: center;
 	padding-bottom: 3vw;
+}
+
+@media only screen and (max-width: 900px) {
+	#myBtnContainer {
+		padding-bottom: 10vw;
+
+	}
 }
 
 
