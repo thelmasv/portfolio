@@ -9,7 +9,9 @@ html,body {
   	scroll-behavior: smooth;	
 	/*background-color: #f3f3f3;*/
   	transition: background-color 1s ease;
-  	background-color: #E4DACD;
+  	/*background-color: #E4DFDA;*/
+  	background-color: #eae7dc;
+
 }
 
 html {
@@ -19,21 +21,10 @@ html {
 
 .panel {
   /* min height incase content is higher than window height */
-	  min-height: 60vw;
+	  min-height: 65vw;
 
 }
 
-.color-lightgrey{
-	background-color: #E4DACD;
-}
-
-.color-blue {
-  background-color: #2C2C2C;
-}
-
-.color-orange {
-	background-color: #E4DACD;
-}
 
 h1{
 	font-size: 16pt;
@@ -89,7 +80,6 @@ header {
 	padding-top: 42%;
 	padding-bottom: 3%;
 	font-family: "Calibri";
-
 
 }
 
@@ -193,8 +183,11 @@ nav span {
 /* ==================================== SKILLS ============================================= */
 
 #skillspart {
-	background-color: #A99893;
+	/*background-color: #A99893;*/
+	/*background-color: #CD8A6D;*/
+	background-color: #e98074;
 	height: 100%;
+
 }
 
 #skillspart p {
@@ -270,6 +263,7 @@ h4 {
 #myBtnContainer {
 	text-align: center;
 	padding-bottom: 3vw;
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -288,6 +282,8 @@ h4 {
   cursor: pointer;
 }
 
+
+
 /* Add a grey background color on mouse-over */
 .btn:hover {
   background-color: #f3f3f3;
@@ -297,6 +293,7 @@ h4 {
 .btn.active {
   background-color: #2C2C2C;
    color: white;
+
 }
 
 .image {
@@ -492,11 +489,12 @@ button {
 
 
 
-.videoandtitle iframe {
+.videoandtitle iframe, audio {
 	margin-left: auto;
 	margin-right: auto;
     max-width: 100%;
     max-height: 100%;
+    display: block;
 }
 
 .videoandtitle p {
@@ -504,6 +502,12 @@ button {
 	padding-top: 70px;
 	padding-right: 10px;
 	font-family: "Calibri";
+}
+
+h5 {
+	margin-left: 10%;
+	font-size: 12pt;
+	
 }
 
 @media only screen and (max-width: 600px) {
@@ -719,6 +723,8 @@ footer p {
 	color: black;
 	text-align: center;
 	padding-top: 5px;
+	font-family: "Calibri";
+
 
 }
 
