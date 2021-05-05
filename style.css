@@ -107,6 +107,11 @@ header {
 
 }
 
+.textofme p {
+	padding-bottom: 10%;
+
+}
+
 nav span {
 	text-decoration: none;
 	color: black;
@@ -125,6 +130,8 @@ nav span {
 	text-align: center;	
 	font-size: 12pt;
 	font-weight: bold;
+	margin-top: 5%;
+	
 }
 
 #projectsnav {
