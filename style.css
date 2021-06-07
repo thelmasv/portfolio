@@ -107,10 +107,6 @@ header {
 
 }
 
-.textofme p {
-	padding-bottom: 10%;
-
-}
 
 nav span {
 	text-decoration: none;
@@ -131,7 +127,7 @@ nav span {
 	font-size: 12pt;
 	font-weight: bold;
 	margin-top: 5%;
-	
+
 }
 
 #projectsnav {
@@ -265,6 +261,7 @@ h4 {
   	margin: 0 auto 30px;
 }
 
+
 /* Style the buttons */
 
 #myBtnContainer {
@@ -299,7 +296,7 @@ h4 {
 /* Add a dark background color to the active button */
 .btn.active {
   background-color: #2C2C2C;
-   color: white;
+  color: white;
 
 }
 
@@ -311,6 +308,7 @@ h4 {
 
 .project {
 	display: none;
+	padding-bottom: -10px;
 }
 
 .show {
@@ -473,9 +471,6 @@ button {
 
   }
 }
-
-
-
 
 
 

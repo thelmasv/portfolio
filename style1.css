@@ -1,0 +1,616 @@
+html,body {
+	font-family: "Yu Gothic UI", "sans serif"; 
+	font-family: "Quicksand";
+	margin: 0;
+	padding: 0;	
+	height: 100%;
+	overflow-y: scroll;
+	overflow: initial !important;
+	overflow-x: hidden !important;
+  	scroll-behavior: smooth;	
+	/*background-color: #f3f3f3;*/
+  	transition: background-color 1s ease;
+  	/*background-color: #E4DFDA;*/
+  	background-color: #eae7dc;
+
+}
+
+.logo {
+	width: 10vw;
+	padding-left: 10px;
+}
+
+#backport {
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+	text-decoration: none;
+	color: #5D5D5D;
+	font-family: "Calibri";
+}
+
+#backport:hover{
+	font-size: 14pt;
+}
+
+.arrowleft{
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	transition: width 2s;
+}
+
+
+.webnav {
+	text-align: center;
+	padding-top: 50px;
+
+}
+
+.webnav a {
+	padding-right: 80px;
+	font-size: 1vw;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	letter-spacing: 0.2em;	
+	transition: background-color 1s ease-out;
+}
+
+.webnav a:hover {
+	background-color: #E98074;
+	width: 10px;	
+}
+
+#fronttext {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	width: 50%;
+	margin: auto;
+	/*border: solid;
+  border-color: rgba(233,128,116,0.4);*/
+	align-items: center;
+  margin-bottom: 10%;
+
+}
+
+#fronttext p {
+  margin-right: 5%;
+  padding: 5%;
+}
+
+#fronttext p:first-child::first-letter{
+    color:#FE5F55;
+    font-weight: bold;
+    font-size: 70px;
+    float: left;
+    line-height: 60px;
+    padding-right: 8px;
+    margin-top: -3px;
+}
+
+#fronttext img {
+	float: right;
+  padding: 5%;
+
+}
+
+/* ============= Pie charts ============= */
+
+#overview {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	/*gap: 5%;*/
+	grid-auto-rows: minmax(400px,auto);	
+	padding-left: 5%;
+	padding-top: 5%;
+	justify-content: center;
+	width: 100%;
+
+
+}
+
+.piechart {
+  height: 100px;
+  position: relative;
+  float: left;
+  margin-left: -10px;
+}
+
+.pieBackground {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+ /* box-shadow: 0px 0px 8px rgba(0,0,0,0.5);*/
+} 
+
+.pie {
+  transition: all 1s;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  clip: rect(0px, 75px, 150px, 0px);
+}
+
+.hold {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+/* ======== Slices ======== */
+/*Degrees = %credits * 360 */
+#slice1 .pie {
+  background-color: #E98074;
+  transform:rotate(36deg);
+}
+
+/*Add the previous degree on the next slice to calculate how much the next slice will be moved */
+#slice2 {
+  transform: rotate(36deg); /*musikv*/
+}
+
+#slice2 .pie {
+  background-color: #508F9D; /*finska*/
+  transform: rotate(172.8deg);
+}
+
+#slice3 {
+  transform: rotate(208.8deg);
+}
+
+#slice3 .pie {
+  background-color: #EFEFEF; /*ling*/
+  transform: rotate(18deg);
+}
+
+#slice4 {
+  transform: rotate(226.8deg);
+}
+
+#slice4 .pie {
+  background-color: #2C2C2C; /*arkeologi*/
+  transform: rotate(36deg);
+}
+
+#slice5 {
+  transform: rotate(262.8deg);
+}
+
+#slice5 .pie {
+  background-color: #A2C577; /*bio*/
+  transform: rotate(18deg);
+}
+
+#slice6 {
+  transform: rotate(280.8deg);
+}
+
+#slice6 .pie {
+  background-color: #717171; /*psyk*/
+  transform: rotate(79.2deg);
+}
+
+/* ======== Half slices ======== */
+
+#slicehalf1 .pie {
+  background-color: #61A685;
+  transform: rotate(180deg);
+}
+
+#slicehalf2 {
+  transform: rotate(180deg);
+}
+
+#slicehalf2 .pie {
+  background-color: #E9B374;
+  transform: rotate(180deg);
+}
+
+/* ======== Whole slices ======== */
+
+#slicewhole1 .pie {
+  background-color: #E2C638;
+  transform: rotate(180deg);
+}
+#slicewhole2 {
+  transform: rotate(180deg);
+}
+#slicewhole2 .pie {
+  background-color: #E2C638;
+  transform: rotate(180deg);
+}
+
+#slicewhole3 .pie {
+  background-color: #CF8EB1;
+  transform: rotate(180deg);
+}
+#slicewhole4 {
+  transform: rotate(180deg);
+}
+#slicewhole4 .pie {
+  background-color: #CF8EB1;
+  transform: rotate(180deg);
+}
+
+/* ======== End of slices ======== */
+
+.innerCircle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #eae7dc;
+  border-radius: 100%;
+  top: 15px;
+  left: 15px; 
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
+  color: white;
+}
+
+.innerCircle .content {
+  position: absolute;
+  display: block;
+  width: 120px;
+  top: 40px;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  font-family: "Calibri";
+}
+
+
+/* ============= list ============= */
+/*credits: https://stackoverflow.com/questions/10028182/how-to-make-a-pie-chart-in-css/51679606*/
+
+.pie-ul ul {
+  list-style: none;
+  margin-left: 37%;
+  margin-right: 2%;
+  font-family: "Calibri";
+
+}
+
+.pie-ul li::before {
+  content: "\2022";
+  margin-left: -1em; 
+  width: 1em; 
+  display: inline-block; 
+  color: #E2C638;
+  font-weight: bold; 
+
+}
+
+.pie-ul .media::before {
+	color: #E2C638;
+
+}
+
+.pie-ul .musikv::before {
+	color: #E98074;
+
+}
+.pie-ul .finska::before {
+	color: #508F9D;
+}
+
+.pie-ul .ling::before {
+	color: #EFEFEF;
+}
+
+
+.pie-ul .ark::before {
+	color: #2C2C2C;
+}
+
+.pie-ul .bio::before {
+	color: #A2C577;
+}
+
+.pie-ul .psyk::before {
+	color: #717171;
+}
+
+.pie-ul .data::before {
+	color: #61A685;
+}
+
+.pie-ul .design::before {
+	color: #E9B374;
+}
+
+.pie-ul .musik::before {
+	color: #CF8EB1;
+}
+
+/* ==================== kth.html ==================== */
+
+.courseline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  /*width:1000px;*/
+  box-sizing:border-box;
+  /*transform-origin:0 0;*/
+  animation:slidedown 1s;
+
+}
+
+@keyframes slidedown {
+  0% {
+    transform:scaleY(0);
+    
+  }
+  100% {
+    transform:scaleY(1);
+  }
+}
+
+.courseline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:#5D5D5D;
+}
+
+.courseline ul{
+  padding:0;
+  margin:0;
+}
+
+.courseline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+
+.courseline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+
+.courseline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+
+.content{
+  padding-bottom:20px;
+  font-family: "Calibri";
+}
+
+.courseline ul li:nth-child(odd):before {
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:#E98074;
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(113,113,113,0.3);
+}
+
+.courseline ul li:nth-child(even):before {
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:#E98074;
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(113,113,113,0.3);
+}
+.courseline ul li h2{
+  padding:0;
+  margin:0;
+  color:#E98074;
+  font-family: Quicksand;
+  font-size: 14pt;
+  letter-spacing: 0.2em;  
+  
+
+
+
+}
+.courseline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+
+
+.coursecat {
+	display: grid;
+
+}
+
+/* ==================================== FOOTER ============================================= */
+
+footer {
+	background-color: #f3f3f3; 
+	bottom: -100px;
+	margin-top: 100px;
+	position: relative;
+  max-height: 100vh;
+}
+
+#rights {
+	font-size: 9pt;
+	color: black;
+	text-align: center;
+	margin-top: 100px;	
+	padding-bottom: 15px;
+
+}
+
+footer p {
+	font-size: 14pt;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	font-family: "Calibri";
+
+
+}
+
+#contacticons {
+	display: flex;
+	justify-content: center;
+}
+
+
+#mail {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+/* ==================== Media queries ==================== */
+@media(min-width:600px) {
+	.mobilenav {
+		display: none;
+	}
+}
+
+@media(max-width:600px) {
+	.webnav {
+		display: none;
+	}
+
+	#backport {
+		display: none;
+	}
+
+
+  /* --- hambruger menu --- */
+  .mobilenav {
+    /*display: inline;*/
+    float: right;
+
+  }
+
+  #menuToggle {
+    display: block;
+    position: relative; 
+    padding-top: 10px;
+    padding-right: 10px;
+
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  #menuToggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    right: -5px;  
+    padding: 0;
+    cursor: pointer;  
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle label {
+    position: relative;
+    display: block;
+    height: 30px;
+  }
+
+  #menuToggle label span {
+    display: none;
+  }
+
+  /* Hamburger*/
+  #menuToggle label div {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin-bottom: 5px;
+    margin-top: -2px;
+    position: relative;
+    background: #5D5D5D;
+    border-radius: 4px;  
+    z-index: 1;  
+
+  }
+
+  #menuToggle input:checked + label div {
+    background: #E98074;
+
+  }
+
+
+  #menu {
+    position: absolute;
+    width: 90px;
+    margin: -100px 0px 0px 100px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #EFEFEF;
+    transition: right 0.3s ease; 
+  }
+
+  #menu a {
+  	float: left;
+  }
+
+
+  #menuToggle input:checked ~ ul {
+    right: 0;
+  }  
+
+  #linkedin a {
+    margin-left: 50%;
+
+  }
+  #mail a {
+    margin-left: 50%;
+
+  }      
+
+  .courseline{
+    width:100%;
+    padding-bottom:0;
+  }
+
+  .courseline:before{
+    left:20px;
+    height:100%;
+  }
+
+  .courseline ul li:nth-child(odd),
+  .courseline ul li:nth-child(even) {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+
+  .courseline ul li:nth-child(odd):before,
+  .courseline ul li:nth-child(even):before {
+    top:-18px;
+    left:16px;
+  }
+
+}
